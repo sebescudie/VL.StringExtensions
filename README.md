@@ -4,7 +4,7 @@ _This plugin is a VL wrapper for [Jeff Klein's String.Extensions](https://github
 
 ## Usage
 
-- Reference `VL.StringExtensions` in your VL Document, you'll have acces to the nodes in String/StringExtensions.
+- In VL, go to Dependencies/Manage Nugets/Commandline and type `nuget install VL.StringExtensions`. The nodes will be available in the nodebrowser under String/StringExtensions.
 
 ## Next
 
