@@ -5,7 +5,3 @@ _This plugin is a VL wrapper for [Jeff Klein's String.Extensions](https://github
 ## Usage
 
 - In VL, go to Dependencies/Manage Nugets/Commandline and type `nuget install VL.StringExtensions`. The nodes will be available in the nodebrowser under String/StringExtensions.
-
-## Next
-
-- A vvvv wrapper

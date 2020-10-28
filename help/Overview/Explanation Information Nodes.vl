@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document xmlns:p="property" Id="Hy26f7eDU04Ogd62NjHNpI" LanguageVersion="2020.3.0.53" Version="0.128">
+  <NugetDependency Id="TtktHF7BmFrNnQFH8nFMYS" Location="VL.CoreLib" Version="2020.3.0-0053-gd338f20e7b" />
+  <Patch Id="V8VNT9QDeiRNhBKJM5zr88">
+    <Canvas Id="LxYRslweZIIMcmJpJ0rGpF" DefaultCategory="Main" BordersChecked="false" CanvasType="FullCategory" />
+    <!--
+
+    ************************ Application ************************
+
+-->
+    <Node Name="Application" Bounds="100,100" Id="KBTVl8sp7O8OgbMOLRpwyI">
+      <p:NodeReference>
+        <Choice Kind="ContainerDefinition" Name="Process" />
+        <FullNameCategoryReference ID="Primitive" />
+      </p:NodeReference>
+      <Patch Id="J7OHe46t0iBL4KupvbCXUZ">
+        <Canvas Id="EDAPO02faxhMcknIvfUugb" CanvasType="Group">
+          <Node Bounds="248,470,100,26" Id="RtXAgWkjEsiLdjS9EfZfA0">
+            <p:NodeReference LastCategoryFullName="Primitive.String.Information" LastSymbolSource="VL.StringExtensions.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <CategoryReference Kind="Category" Name="Information" />
+              <Choice Kind="OperationCallFlag" Name="CountOccurrences" />
+            </p:NodeReference>
+            <Pin Id="M0h8tMU9rjHLpJpF5q4mIN" Name="Input" Kind="InputPin" />
+            <Pin Id="NU5zxC89lqwPFhBvIG33Cd" Name="String To Match" Kind="InputPin" />
+            <Pin Id="EonN1YI211KPfjtLKbJBxk" Name="Result" Kind="OutputPin" />
+          </Node>
+          <Node Bounds="624,463,69,26" Id="FlHEeKrerS5LKSBiWJmfaS">
+            <p:NodeReference LastCategoryFullName="Primitive.String.Information" LastSymbolSource="VL.StringExtensions.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <CategoryReference Kind="Category" Name="Information" />
+              <Choice Kind="OperationCallFlag" Name="GetByteSize" />
+            </p:NodeReference>
+            <Pin Id="QFQaQ3YhsxkMp1eazBRQmR" Name="Input" Kind="InputPin" />
+            <Pin Id="Mo8BBul0UqgM3nxMkFCoSK" Name="Encoding" Kind="InputPin" />
+            <Pin Id="InDILD05RZkNh7GMLRh1Bb" Name="Output" Kind="OutputPin" />
+          </Node>
+          <Pad Id="JraD9pUYBuEQbEImTdPCjS" Comment="" Bounds="250,348,152,69" ShowValueBox="true" isIOBox="true" Value="There’s no escaping reason, no denying purpose. Because as we both know, without purpose, we would not exist.">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Pad Id="O7JGONyU06PQdKXkqDCws9" Comment="" Bounds="250,542,46,15" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="QQNbHQAQmQXPfPJzjV5DBD" Comment="String To Match" Bounds="345,442,49,15" ShowValueBox="true" isIOBox="true" Value="purpose">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Pad Id="F3s8ipUpoZ7OaV7a5906Ry" Comment="" Bounds="626,365,111,48" ShowValueBox="true" isIOBox="true" Value="I don’t like the idea that I’m not in control of my life.">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Node Bounds="688,426,40,19" Id="LjDEEiweixTOhkccxkYJ3k">
+            <p:NodeReference LastCategoryFullName="System.Text.Encoding" LastSymbolSource="System.Text.Encoding.dll">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <CategoryReference Kind="AssemblyCategory" Name="Encoding" />
+              <Choice Kind="OperationCallFlag" Name="ASCII" />
+            </p:NodeReference>
+            <Pin Id="UIkg1eAb5sWNFKkJEGv1ZY" Name="ASCII" Kind="OutputPin" />
+          </Node>
+          <Pad Id="U0L789FPhphOnfe8zYkoIH" Comment="" Bounds="626,532,35,15" ShowValueBox="true" isIOBox="true" />
+        </Canvas>
+        <Patch Id="BDNHSCVD5WbOUW4wE5pB4D" Name="Create" />
+        <Patch Id="B5XvZDoh2v5PVqZ6KlDs6a" Name="Update" />
+        <ProcessDefinition Id="F9f6xo1l2MlLaWMwWDQAWS">
+          <Fragment Id="UvLcmCSYhApL8KTq3GPH4O" Patch="BDNHSCVD5WbOUW4wE5pB4D" Enabled="true" />
+          <Fragment Id="S2MArxSqQbNPIzbE8TZUwo" Patch="B5XvZDoh2v5PVqZ6KlDs6a" Enabled="true" />
+        </ProcessDefinition>
+        <Link Id="J8rER3o3RLtOfI8IxkEApi" Ids="JraD9pUYBuEQbEImTdPCjS,M0h8tMU9rjHLpJpF5q4mIN" />
+        <Link Id="PLH0qBU35GIPxhiq91a3Ky" Ids="EonN1YI211KPfjtLKbJBxk,O7JGONyU06PQdKXkqDCws9" />
+        <Link Id="URjmcSgZS10M9b3BG5Y8rE" Ids="QQNbHQAQmQXPfPJzjV5DBD,NU5zxC89lqwPFhBvIG33Cd" />
+        <Link Id="NoOlC8B8D33PNkISKxUSsd" Ids="F3s8ipUpoZ7OaV7a5906Ry,QFQaQ3YhsxkMp1eazBRQmR" />
+        <Link Id="OxfG8R0lCiIOMMyzGmlo4e" Ids="InDILD05RZkNh7GMLRh1Bb,U0L789FPhphOnfe8zYkoIH" />
+        <Link Id="Jr572ncMBf8ORkXyPLJWDw" Ids="UIkg1eAb5sWNFKkJEGv1ZY,Mo8BBul0UqgM3nxMkFCoSK" />
+      </Patch>
+    </Node>
+  </Patch>
+  <NugetDependency Id="EkUOS966VytNIhgaLmqxrl" Location="VL.Stride" Version="0.8.23-g0ebf2d6cbb" />
+  <NugetDependency Id="OCPnu8AQk0kPs2V5w8h9Kc" Location="VL.StringExtensions" Version="0.0.0.0" />
+  <PlatformDependency Id="KbIgU7bek3NN8PPgEEyKek" Location="System.Text.Encoding" />
+</Document>

@@ -1,0 +1,1734 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document xmlns:p="property" Id="GB2VxUl5VdhM5rsl5IbjQg" LanguageVersion="2020.3.0.53" Version="0.128">
+  <NugetDependency Id="RKFCmk1Lg5EP3I4IQegLTw" Location="VL.CoreLib" Version="2020.3.0-0053-gd338f20e7b" />
+  <NugetDependency Id="RsCQKnqSTyuMrgCj6pmHyI" Location="StringExtensionsLibrary" Version="1.0.0" />
+  <Patch Id="Th8hpfHvBF4Lk6VOwDCc9D">
+    <Canvas Id="NtZT52Xp5qNOXK0fF2H7kv" DefaultCategory="Primitive.String" CanvasType="FullCategory">
+      <Canvas Id="CpXverJm2WaMV3voqLbkQj" Name="Removal" Position="120,107">
+        <!--
+
+    ************************ RemoveChars ************************
+
+-->
+        <Node Name="RemoveChars" Bounds="326,145,180,126" Id="FzoCfPKOg8xN3GzAX0P84J">
+          <p:NodeReference>
+            <Choice Kind="OperationDefinition" Name="Operation" />
+            <FullNameCategoryReference ID="Primitive" />
+          </p:NodeReference>
+          <p:HideCategory p:Type="Boolean">false</p:HideCategory>
+          <Patch Id="KMGoNF7e8k7LxI9oS2F2ZJ">
+            <Node Bounds="338,225,78,26" AutoConnect="true" Id="B0dz5sPzzozM3T40BWzYlM">
+              <p:NodeReference LastCategoryFullName="StringExtensionLibrary.StringExtensions" LastSymbolSource="StringExtensionLibrary.dll">
+                <Choice Kind="OperationNode" Name="RemoveChars" />
+                <FullNameCategoryReference ID="StringExtensionLibrary.StringExtensions" />
+              </p:NodeReference>
+              <Pin Id="EA84xZ6XofYOCDeVYVFI9z" Name="Input" Kind="StateInputPin" />
+              <Pin Id="Kk7shKbkD4XNzoMZNIzA39" Name="Chars" Kind="InputPin" />
+              <Pin Id="EjsffaPdzvNOpb6obJam3d" Name="Output" Kind="OutputPin" />
+            </Node>
+            <Node Bounds="411,186,83,26" Id="G2OZGyyPiigPtKOklsUgWS">
+              <p:NodeReference LastCategoryFullName="Collections.Mutable.MutableArray" LastSymbolSource="VL.Collections.vl">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <Choice Kind="OperationCallFlag" Name="FromSequence" />
+                <CategoryReference Kind="ArrayType" Name="MutableArray" NeedsToBeDirectParent="true" />
+              </p:NodeReference>
+              <Pin Id="Lp63SabjomgMN2bq5YPwmb" Name="Input" Kind="StateInputPin" />
+              <Pin Id="Um2yslfe5g8MJqCR8GTxG4" Name="Result" Kind="OutputPin" />
+            </Node>
+            <Link Id="VIVZHbhT3hOOrj0PUedktB" Ids="Um2yslfe5g8MJqCR8GTxG4,Kk7shKbkD4XNzoMZNIzA39" />
+            <ControlPoint Id="S03Og0mXxSHQaHoeViyAkj" Bounds="413,163" />
+            <Link Id="HAshc2gNvdxMx6U4Fm6hwZ" Ids="S03Og0mXxSHQaHoeViyAkj,Lp63SabjomgMN2bq5YPwmb" />
+            <Link Id="BaAmyxALP1yPCbapyUeUsW" Ids="GQ7nwaRGh8gOLsyItlsUYo,S03Og0mXxSHQaHoeViyAkj" IsHidden="true" />
+            <Pin Id="GQ7nwaRGh8gOLsyItlsUYo" Name="Chars" Kind="InputPin" Bounds="379,173" />
+            <Pin Id="CL3PHbPKEC5PaGSBriYYpt" Name="Input" Kind="InputPin" />
+            <Pin Id="LvqHWjkQsZiMUf3a6y7iN4" Name="Output" Kind="OutputPin" />
+          </Patch>
+        </Node>
+        <!--
+
+    ************************ Truncate ************************
+
+-->
+        <Node Name="Truncate" Bounds="126,148,112,80" Id="QlV1MRIWpixQCUmeDsdg4M">
+          <p:NodeReference>
+            <Choice Kind="OperationDefinition" Name="Operation" />
+            <FullNameCategoryReference ID="Primitive" />
+          </p:NodeReference>
+          <p:HideCategory p:Type="Boolean">false</p:HideCategory>
+          <Patch Id="FwAdjc8o5dXNQ6FLUzHymk">
+            <Node Bounds="138,177,76,26" AutoConnect="true" Id="VG3XJYYx8CcOAvG2dqUrzR">
+              <p:NodeReference LastCategoryFullName="StringExtensionLibrary.StringExtensions" LastSymbolSource="StringExtensionLibrary.dll">
+                <Choice Kind="OperationNode" Name="Truncate" />
+                <FullNameCategoryReference ID="StringExtensionLibrary.StringExtensions" />
+              </p:NodeReference>
+              <Pin Id="AQF66EGwTRCNoYbTinVNko" Name="Input" Kind="StateInputPin" />
+              <Pin Id="VkRoW586uZuN61G2D0lb7d" Name="Max Length" Kind="InputPin" />
+              <Pin Id="U5CpaAYVT6ePC1z1bSoLvV" Name="Output" Kind="OutputPin" />
+            </Node>
+            <Pin Id="C56AU0QZTeAL7B08JMsztl" Name="Input" Kind="InputPin" />
+            <Pin Id="SbyeDueNvleOYuymaALbCr" Name="Max Length" Kind="InputPin" />
+            <Pin Id="EeUjuARmVtwNFKJoZemH3C" Name="Output" Kind="OutputPin" />
+          </Patch>
+        </Node>
+        <!--
+
+    ************************ RemovePrefix ************************
+
+-->
+        <Node Name="RemovePrefix" Bounds="124,345,112,80" Id="N3qCNfzj5ciM9CWnjrwynJ">
+          <p:NodeReference>
+            <Choice Kind="OperationDefinition" Name="Operation" />
+            <FullNameCategoryReference ID="Primitive" />
+          </p:NodeReference>
+          <p:HideCategory p:Type="Boolean">false</p:HideCategory>
+          <Patch Id="OInWuNikmTwQOmMwz3ez2I">
+            <Node Bounds="136,374,78,26" AutoConnect="true" Id="VRFKLUEcAbkLVt3QO7ifsa">
+              <p:NodeReference LastCategoryFullName="StringExtensionLibrary.StringExtensions" LastSymbolSource="StringExtensionLibrary.dll">
+                <Choice Kind="OperationNode" Name="RemovePrefix" />
+                <FullNameCategoryReference ID="StringExtensionLibrary.StringExtensions" />
+              </p:NodeReference>
+              <Pin Id="IWbWHmuJoU7PSBzT4dVl42" Name="Input" Kind="StateInputPin" />
+              <Pin Id="IndUNArK3ofPSrQC3KBnrK" Name="Prefix" Kind="InputPin" />
+              <Pin Id="FzBUkBvxueENECPuWkb2Uu" Name="Ignore Case" Kind="InputPin" />
+              <Pin Id="N7PtufNj2CZLpN2xgxyqDa" Name="Output" Kind="OutputPin" />
+            </Node>
+            <Pin Id="SKjbzEquRx4LB6F5uBoP8c" Name="Input" Kind="InputPin" />
+            <Pin Id="ErEXgl3pEZiM4DrA0fowXa" Name="Prefix" Kind="InputPin" />
+            <Pin Id="Rak614vrWdNO5n34jDGurp" Name="Ignore Case" Kind="InputPin" />
+            <Pin Id="CNix5GSlk0nO2ayM21xMB7" Name="Output" Kind="OutputPin" />
+          </Patch>
+        </Node>
+        <!--
+
+    ************************ RemoveSuffix ************************
+
+-->
+        <Node Name="RemoveSuffix" Bounds="340,353,112,80" Id="NxVEDDdW3cjP6CJNQXVHEC">
+          <p:NodeReference>
+            <Choice Kind="OperationDefinition" Name="Operation" />
+            <FullNameCategoryReference ID="Primitive" />
+          </p:NodeReference>
+          <p:HideCategory p:Type="Boolean">false</p:HideCategory>
+          <Patch Id="N2xp8WyVjObPgUvJTJFkFk">
+            <Node Bounds="352,382,78,26" AutoConnect="true" Id="VJ40m96ZlUfM5yXjDbdXQo">
+              <p:NodeReference LastCategoryFullName="StringExtensionLibrary.StringExtensions" LastSymbolSource="StringExtensionLibrary.dll">
+                <Choice Kind="OperationNode" Name="RemoveSuffix" />
+                <FullNameCategoryReference ID="StringExtensionLibrary.StringExtensions" />
+              </p:NodeReference>
+              <Pin Id="NpKQD16CXZuQIjTAhPxPrQ" Name="Input" Kind="StateInputPin" />
+              <Pin Id="BACojrgs3OAOYJscke4ITb" Name="Suffix" Kind="InputPin" />
+              <Pin Id="BKmF8sERzf8MZb57elR7wZ" Name="Ignore Case" Kind="InputPin" />
+              <Pin Id="RWq0amTu3H4PeT9eA8ij2T" Name="Output" Kind="OutputPin" />
+            </Node>
+            <Pin Id="HrjuAymm0jGPdBrbfC9ktT" Name="Input" Kind="InputPin" />
+            <Pin Id="NKKwwW0BiFSNk08DTZ6FYc" Name="Suffix" Kind="InputPin" />
+            <Pin Id="UwqwB3xCp2tQSwqGeV97Gt" Name="Ignore Case" Kind="InputPin" />
+            <Pin Id="UHfGiwlrpZfO304SMKeULH" Name="Output" Kind="OutputPin" />
+          </Patch>
+        </Node>
+      </Canvas>
+      <Canvas Id="SUxW1FWEAWYOv9TPWeR9EV" Name="Verification" Position="120,172">
+        <!--
+
+    ************************ IsEmailAddress ************************
+
+-->
+        <Node Name="IsEmailAddress" Bounds="337,375,112,80" Id="MwkrtP8kpI7PZ68x7188l7">
+          <p:NodeReference>
+            <Choice Kind="OperationDefinition" Name="Operation" />
+            <FullNameCategoryReference ID="Primitive" />
+          </p:NodeReference>
+          <p:HideCategory p:Type="Boolean">false</p:HideCategory>
+          <Patch Id="K5qnku1UC9KPvhVbCnIkAe">
+            <Node Bounds="349,403,76,26" AutoConnect="true" Id="CKX2AhjL8wGNeGiAjFQ0uU">
+              <p:NodeReference LastCategoryFullName="StringExtensionLibrary.StringExtensions" LastSymbolSource="StringExtensionLibrary.dll">
+                <Choice Kind="OperationNode" Name="IsEmailAddress" />
+                <FullNameCategoryReference ID="StringExtensionLibrary.StringExtensions" />
+              </p:NodeReference>
+              <Pin Id="HD5quRB0rgSNuhYfRcIn0S" Name="Input" Kind="StateInputPin" />
+              <Pin Id="UbtfFAGEubJQHZATuPL1Ye" Name="Result" Kind="OutputPin" />
+            </Node>
+            <Pin Id="PVb2R5806ZONfzQBwD1T5k" Name="Input" Kind="InputPin" />
+            <Pin Id="E4JFMoZNmxpNLX4g5I9kvh" Name="Result" Kind="OutputPin" />
+          </Patch>
+        </Node>
+        <!--
+
+    ************************ IsInteger ************************
+
+-->
+        <Node Name="IsInteger" Bounds="617,375,112,80" Id="M8BSyJunAZtOZFsgzYlglV">
+          <p:NodeReference>
+            <Choice Kind="OperationDefinition" Name="Operation" />
+            <FullNameCategoryReference ID="Primitive" />
+          </p:NodeReference>
+          <p:HideCategory p:Type="Boolean">false</p:HideCategory>
+          <Patch Id="FczvNeMTmfCOlxpxhDPT2S">
+            <Node Bounds="629,403,76,26" AutoConnect="true" Id="QmXZJPu80CVNxzmggnE4Zq">
+              <p:NodeReference LastCategoryFullName="StringExtensionLibrary.StringExtensions" LastSymbolSource="StringExtensionLibrary.dll">
+                <Choice Kind="OperationNode" Name="IsInteger" />
+                <FullNameCategoryReference ID="StringExtensionLibrary.StringExtensions" />
+              </p:NodeReference>
+              <Pin Id="P7TZoPmGoDjOqZA723yFXu" Name="Input" Kind="StateInputPin" />
+              <Pin Id="D3iFSdGJ8xDO4L8KmQrgLR" Name="Result" Kind="OutputPin" />
+            </Node>
+            <Pin Id="HKU9jI2lpNCOCjdUXHMbXe" Name="Input" Kind="InputPin" />
+            <Pin Id="DbOrDt94KGDLRsdcowJDXO" Name="Result" Kind="OutputPin" />
+          </Patch>
+        </Node>
+        <!--
+
+    ************************ IsNull ************************
+
+-->
+        <Node Name="IsNull" Bounds="897,375,112,80" Id="VaM8hQZLBgOLSVdamHl8PG">
+          <p:NodeReference>
+            <Choice Kind="OperationDefinition" Name="Operation" />
+            <FullNameCategoryReference ID="Primitive" />
+          </p:NodeReference>
+          <p:HideCategory p:Type="Boolean">false</p:HideCategory>
+          <Patch Id="BpwiEBzVQO0L8bffJGyccB">
+            <Node Bounds="909,403,76,26" AutoConnect="true" Id="Phjjeb3MB0ALquSVUb6mEC">
+              <p:NodeReference LastCategoryFullName="StringExtensionLibrary.StringExtensions" LastSymbolSource="StringExtensionLibrary.dll">
+                <Choice Kind="OperationNode" Name="IsNull" />
+                <FullNameCategoryReference ID="StringExtensionLibrary.StringExtensions" />
+              </p:NodeReference>
+              <Pin Id="Exo4lk69HLHNBhypLBefPI" Name="Input" Kind="StateInputPin" />
+              <Pin Id="VPKs1cFRLrrQOmNmKiVZ7Q" Name="Result" Kind="OutputPin" />
+            </Node>
+            <Pin Id="KxaNnTKU3XAObNqbODAFVm" Name="Input" Kind="InputPin" />
+            <Pin Id="F4z0tJVAYONMA4d7skuf1C" Name="Result" Kind="OutputPin" />
+          </Patch>
+        </Node>
+        <!--
+
+    ************************ IsNumeric ************************
+
+-->
+        <Node Name="IsNumeric" Bounds="1177,375,112,80" Id="KWNIQWcKeAkNdRL3WQNLpS">
+          <p:NodeReference>
+            <Choice Kind="OperationDefinition" Name="Operation" />
+            <FullNameCategoryReference ID="Primitive" />
+          </p:NodeReference>
+          <p:HideCategory p:Type="Boolean">false</p:HideCategory>
+          <Patch Id="Sb5n4OUlThjQCrEh37rbuD">
+            <Node Bounds="1189,403,76,26" AutoConnect="true" Id="Ns7KTBck9hQNb18jCWUcYh">
+              <p:NodeReference LastCategoryFullName="StringExtensionLibrary.StringExtensions" LastSymbolSource="StringExtensionLibrary.dll">
+                <Choice Kind="OperationNode" Name="IsNumeric" />
+                <FullNameCategoryReference ID="StringExtensionLibrary.StringExtensions" />
+              </p:NodeReference>
+              <Pin Id="Ffd5J005R7CNUENDbhzmI0" Name="Input" Kind="StateInputPin" />
+              <Pin Id="I9Je7kqsYq1Nu3XDjUsrix" Name="Result" Kind="OutputPin" />
+            </Node>
+            <Pin Id="RLcCXkgvw80OunBC3IDbpi" Name="Input" Kind="InputPin" />
+            <Pin Id="MOPQ7huUMNSLwKJhfNVi3B" Name="Result" Kind="OutputPin" />
+          </Patch>
+        </Node>
+        <!--
+
+    ************************ IsValidIPv4 ************************
+
+-->
+        <Node Name="IsValidIPv4" Bounds="1457,375,112,80" Id="GSS6x2KYLsNMO4sBvwth6O">
+          <p:NodeReference>
+            <Choice Kind="OperationDefinition" Name="Operation" />
+            <FullNameCategoryReference ID="Primitive" />
+          </p:NodeReference>
+          <p:HideCategory p:Type="Boolean">false</p:HideCategory>
+          <Patch Id="Uo5Lv084Z2OPRxN0KZFgWY">
+            <Node Bounds="1469,403,76,26" AutoConnect="true" Id="GwaZCvgTWFrOEtHbEwBvWn">
+              <p:NodeReference LastCategoryFullName="StringExtensionLibrary.StringExtensions" LastSymbolSource="StringExtensionLibrary.dll">
+                <Choice Kind="OperationNode" Name="IsValidIPv4" />
+                <FullNameCategoryReference ID="StringExtensionLibrary.StringExtensions" />
+              </p:NodeReference>
+              <Pin Id="QBttHBDHk4UO5UOJxpn5Mv" Name="Input" Kind="StateInputPin" />
+              <Pin Id="KbpzOgOn5PZMuptnzzs299" Name="Result" Kind="OutputPin" />
+            </Node>
+            <Pin Id="C9nRl8uPXeEMyav6WkncNB" Name="Input" Kind="InputPin" />
+            <Pin Id="TqUx5y6PttKLGvt6MNeRZe" Name="Result" Kind="OutputPin" />
+          </Patch>
+        </Node>
+        <!--
+
+    ************************ IsAlpha ************************
+
+-->
+        <Node Name="IsAlpha" Bounds="320,542,112,80" Id="HV8hJTocByoMXjMRAMWgJs">
+          <p:NodeReference>
+            <Choice Kind="OperationDefinition" Name="Operation" />
+            <FullNameCategoryReference ID="Primitive" />
+          </p:NodeReference>
+          <p:HideCategory p:Type="Boolean">false</p:HideCategory>
+          <Patch Id="IeqfGQEOo5KMMbNT1fDEGS">
+            <Node Bounds="332,570,76,26" AutoConnect="true" Id="Vy0A3grGKghPKLDFWaGQgf">
+              <p:NodeReference LastCategoryFullName="StringExtensionLibrary.StringExtensions" LastSymbolSource="StringExtensionLibrary.dll">
+                <Choice Kind="OperationNode" Name="IsAlpha" />
+                <FullNameCategoryReference ID="StringExtensionLibrary.StringExtensions" />
+              </p:NodeReference>
+              <Pin Id="GbZgAGhk0ymPxfsSHoMh8O" Name="Input" Kind="StateInputPin" />
+              <Pin Id="JzNNyRrOgwJNoQ3p3AA8eo" Name="Result" Kind="OutputPin" />
+            </Node>
+            <Pin Id="UqjyciDguK0LLfPTpZwHkS" Name="Input" Kind="InputPin" />
+            <Pin Id="IEMXvUCQ6xgPsRTdF8uZx6" Name="Result" Kind="OutputPin" />
+          </Patch>
+        </Node>
+        <!--
+
+    ************************ IsAlphaNumeric ************************
+
+-->
+        <Node Name="IsAlphaNumeric" Bounds="600,542,112,80" Id="UvxnhNNAzz0Lw74eBuDHC5">
+          <p:NodeReference>
+            <Choice Kind="OperationDefinition" Name="Operation" />
+            <FullNameCategoryReference ID="Primitive" />
+          </p:NodeReference>
+          <p:HideCategory p:Type="Boolean">false</p:HideCategory>
+          <Patch Id="V3zlEv6uKFUMqvKEXNSUI5">
+            <Node Bounds="612,570,76,26" AutoConnect="true" Id="EXVwUyKjYv8Lkj80eCl9Zr">
+              <p:NodeReference LastCategoryFullName="StringExtensionLibrary.StringExtensions" LastSymbolSource="StringExtensionLibrary.dll">
+                <Choice Kind="OperationNode" Name="IsAlphaNumeric" />
+                <FullNameCategoryReference ID="StringExtensionLibrary.StringExtensions" />
+              </p:NodeReference>
+              <Pin Id="C5Es4S6TMFaNu8rpDsM93w" Name="Input" Kind="StateInputPin" />
+              <Pin Id="U2ar70JejqoNc4hi2m1pCn" Name="Result" Kind="OutputPin" />
+            </Node>
+            <Pin Id="AjtvlDdSsYoNqdAjkRMPzQ" Name="Input" Kind="InputPin" />
+            <Pin Id="CRbcIdnBMmXMRuldFKkW5i" Name="Result" Kind="OutputPin" />
+          </Patch>
+        </Node>
+        <!--
+
+    ************************ IsDateTime ************************
+
+-->
+        <Node Name="IsDateTime" Bounds="880,542,112,80" Id="OkKaXiT2pXLLVfrYfzatRz">
+          <p:NodeReference>
+            <Choice Kind="OperationDefinition" Name="Operation" />
+            <FullNameCategoryReference ID="Primitive" />
+          </p:NodeReference>
+          <p:HideCategory p:Type="Boolean">false</p:HideCategory>
+          <Patch Id="QxPcrBO0IJXOibGWEGq24a">
+            <Node Bounds="892,570,76,26" AutoConnect="true" Id="EH95SCSSVXQMkYnGpDMczV">
+              <p:NodeReference LastCategoryFullName="StringExtensionLibrary.StringExtensions" LastSymbolSource="StringExtensionLibrary.dll">
+                <Choice Kind="OperationNode" Name="IsDateTime" />
+                <FullNameCategoryReference ID="StringExtensionLibrary.StringExtensions" />
+              </p:NodeReference>
+              <Pin Id="RdhnKSOAJGLMIwfePAQBzK" Name="Input" Kind="StateInputPin" />
+              <Pin Id="SDyyTVy7anLOVMrhkpnaey" Name="Date Format" Kind="InputPin" />
+              <Pin Id="Q8ubr1zltgwQRbbB0CVarm" Name="Result" Kind="OutputPin" />
+            </Node>
+            <Pin Id="Rj9wxY71HtFQatVHFo1uYd" Name="Input" Kind="InputPin" />
+            <Pin Id="N4tdEX9UVloP9o0eaWjxrs" Name="Date Format" Kind="InputPin" />
+            <Pin Id="TqkdEB3ddo4LJjWRAcovLC" Name="Result" Kind="OutputPin" />
+          </Patch>
+        </Node>
+        <!--
+
+    ************************ StartsWithIgnoreCase ************************
+
+-->
+        <Node Name="StartsWithIgnoreCase" Bounds="548,766,137,80" Id="FHpQBw2vU0zLcL102eNxbX">
+          <p:NodeReference>
+            <Choice Kind="OperationDefinition" Name="Operation" />
+            <FullNameCategoryReference ID="Primitive" />
+          </p:NodeReference>
+          <p:HideCategory p:Type="Boolean">false</p:HideCategory>
+          <Patch Id="L54JoQ31g3nMN4MMDkdOvF">
+            <Node Bounds="560,795,113,26" AutoConnect="true" Id="Skd2fAcTkonLlpBIwyNXBo">
+              <p:NodeReference LastCategoryFullName="StringExtensionLibrary.StringExtensions" LastSymbolSource="StringExtensionLibrary.dll">
+                <Choice Kind="OperationNode" Name="StartsWithIgnoreCase" />
+                <FullNameCategoryReference ID="StringExtensionLibrary.StringExtensions" />
+              </p:NodeReference>
+              <Pin Id="BT5yVxxBuegMY1VFrIcYKX" Name="Input" Kind="StateInputPin" />
+              <Pin Id="Eeq5XrtYYQVPD3eUqJ5cUJ" Name="Prefix" Kind="InputPin" />
+              <Pin Id="TH7t0JsvNirLrbxOfBJRTW" Name="Result" Kind="OutputPin" />
+            </Node>
+            <Pin Id="JPjvhs5dAiiPK8yBwfaT6x" Name="Input" Kind="InputPin" />
+            <Pin Id="HRXVAzb1cLIPxZtGmIix0j" Name="Prefix" Kind="InputPin" />
+            <Pin Id="S16m4tYMRKdPkyVW2TLBIx" Name="Result" Kind="OutputPin" />
+          </Patch>
+        </Node>
+        <!--
+
+    ************************ DoesNotEndWith ************************
+
+-->
+        <Node Name="DoesNotEndWith" Bounds="801,729,112,80" Id="IUnT9yuQqbuLbI3VRU3FNk">
+          <p:NodeReference>
+            <Choice Kind="OperationDefinition" Name="Operation" />
+            <FullNameCategoryReference ID="Primitive" />
+          </p:NodeReference>
+          <p:HideCategory p:Type="Boolean">false</p:HideCategory>
+          <Patch Id="L79No8RHAesN37s0FSPCau">
+            <Node Bounds="813,757,76,26" AutoConnect="true" Id="KjSvDot0FDOLhPrrRqr3u3">
+              <p:NodeReference LastCategoryFullName="StringExtensionLibrary.StringExtensions" LastSymbolSource="StringExtensionLibrary.dll">
+                <Choice Kind="OperationNode" Name="DoesNotEndWith" />
+                <FullNameCategoryReference ID="StringExtensionLibrary.StringExtensions" />
+              </p:NodeReference>
+              <Pin Id="BdDtmxb5tPmMy7mwLEdZQ9" Name="Input" Kind="StateInputPin" />
+              <Pin Id="TG0xbq8Ute3NUBwEiamVmk" Name="Suffix" Kind="InputPin" />
+              <Pin Id="JkpsaDgNVqQPsSuY1WPVv5" Name="Result" Kind="OutputPin" />
+            </Node>
+            <Pin Id="ObVpIHtzyn1Okn7mbWytKy" Name="Input" Kind="InputPin" />
+            <Pin Id="P7BQjJxGiZrPrEtWLYNySs" Name="Suffix" Kind="InputPin" />
+            <Pin Id="JjmTvKsaIl8PNb6oxYax6m" Name="Result" Kind="OutputPin" />
+          </Patch>
+        </Node>
+        <!--
+
+    ************************ DoesNotStartWith ************************
+
+-->
+        <Node Name="DoesNotStartWith" Bounds="1081,729,112,80" Id="HI2n9XGH67GNd1DEZb75Ru">
+          <p:NodeReference>
+            <Choice Kind="OperationDefinition" Name="Operation" />
+            <FullNameCategoryReference ID="Primitive" />
+          </p:NodeReference>
+          <p:HideCategory p:Type="Boolean">false</p:HideCategory>
+          <Patch Id="AtTucl6hoTRMGZyfkTjqon">
+            <Node Bounds="1093,757,76,26" AutoConnect="true" Id="Ga0KxxKz6BALWsxPbDvSQi">
+              <p:NodeReference LastCategoryFullName="StringExtensionLibrary.StringExtensions" LastSymbolSource="StringExtensionLibrary.dll">
+                <Choice Kind="OperationNode" Name="DoesNotStartWith" />
+                <FullNameCategoryReference ID="StringExtensionLibrary.StringExtensions" />
+              </p:NodeReference>
+              <Pin Id="FeKrVvsGXB8LCfc73DJiZa" Name="Input" Kind="StateInputPin" />
+              <Pin Id="KBXy6QbIYQXPfzOH3lA5RZ" Name="Prefix" Kind="InputPin" />
+              <Pin Id="Pl4hB6gYPyyOnH4nxsi1JM" Name="Result" Kind="OutputPin" />
+            </Node>
+            <Pin Id="LzChbdtiCxGN2vIPtgELN0" Name="Input" Kind="InputPin" />
+            <Pin Id="UTesR0Zs037MIuWo3jzYuH" Name="Prefix" Kind="InputPin" />
+            <Pin Id="RUUTi3M6qbBLrjywfZ9yOH" Name="Result" Kind="OutputPin" />
+          </Patch>
+        </Node>
+        <!--
+
+    ************************ EndsWithIgnoreCase ************************
+
+-->
+        <Node Name="EndsWithIgnoreCase" Bounds="392,825,133,80" Id="Edjrg5WlY3AN1rUVpzvnyD">
+          <p:NodeReference>
+            <Choice Kind="OperationDefinition" Name="Operation" />
+            <FullNameCategoryReference ID="Primitive" />
+          </p:NodeReference>
+          <p:HideCategory p:Type="Boolean">false</p:HideCategory>
+          <Patch Id="Bfj0nV4THhjMwVWuAnCZVk">
+            <Node Bounds="404,854,109,26" AutoConnect="true" Id="ToOyQVxfd7XOZNZYHiHCLC">
+              <p:NodeReference LastCategoryFullName="StringExtensionLibrary.StringExtensions" LastSymbolSource="StringExtensionLibrary.dll">
+                <Choice Kind="OperationNode" Name="EndsWithIgnoreCase" />
+                <FullNameCategoryReference ID="StringExtensionLibrary.StringExtensions" />
+              </p:NodeReference>
+              <Pin Id="LCEVbnVv1RYLTrCj5ZW9hO" Name="Input" Kind="StateInputPin" />
+              <Pin Id="SBwfSJm5WB0QFR3e38ok0H" Name="Suffix" Kind="InputPin" />
+              <Pin Id="VpZ3RMmhvIHPa196erNMiW" Name="Result" Kind="OutputPin" />
+            </Node>
+            <Pin Id="JO68yrLyMHlO73wrdHgxSr" Name="Input" Kind="InputPin" />
+            <Pin Id="RvaZlubiyYIOzSc8leqWuj" Name="Suffix" Kind="InputPin" />
+            <Pin Id="L2Er3rZfnVZP0vzyllRsVR" Name="Result" Kind="OutputPin" />
+          </Patch>
+        </Node>
+      </Canvas>
+      <Canvas Id="JMxGkh6Hc8PNDUTKZ8MUMr" Name="Extraction" Position="120,237">
+        <!--
+
+    ************************ LastCharacter ************************
+
+-->
+        <Node Name="LastCharacter" Bounds="296,170,112,80" Id="GwwnkqTZKKFPljpfFTX3iK">
+          <p:NodeReference>
+            <Choice Kind="OperationDefinition" Name="Operation" />
+            <FullNameCategoryReference ID="Primitive" />
+          </p:NodeReference>
+          <p:HideCategory p:Type="Boolean">false</p:HideCategory>
+          <Patch Id="GZ2Aoheg6GlPC5d4afm6Qz">
+            <Node Bounds="308,199,79,26" AutoConnect="true" Id="QPbjsIc1dh5P82avsMwXub">
+              <p:NodeReference LastCategoryFullName="StringExtensionLibrary.StringExtensions" LastSymbolSource="StringExtensionLibrary.dll">
+                <Choice Kind="OperationNode" Name="LastCharacter" />
+                <FullNameCategoryReference ID="StringExtensionLibrary.StringExtensions" />
+              </p:NodeReference>
+              <Pin Id="HDO9TEogG5cOuz1jiynLOa" Name="Input" Kind="StateInputPin" />
+              <Pin Id="KGYPx3D2PwLQaXBg0TFBwo" Name="Output" Kind="OutputPin" />
+            </Node>
+            <Pin Id="TV9q7c2U1exQIlKqwM3Lbl" Name="Input" Kind="InputPin" />
+            <Pin Id="P0386980PQrOBdbdV8ZD2T" Name="Output" Kind="OutputPin" />
+          </Patch>
+        </Node>
+        <!--
+
+    ************************ Left ************************
+
+-->
+        <Node Name="Left" Bounds="119,302,164,213" Id="O01EQpu7QAfNh6Wv9akj0B">
+          <p:NodeReference>
+            <Choice Kind="OperationDefinition" Name="Operation" />
+            <FullNameCategoryReference ID="Primitive" />
+          </p:NodeReference>
+          <p:HideCategory p:Type="Boolean">false</p:HideCategory>
+          <Patch Id="LrPgtRVovefMBL1NHP14Ls">
+            <Pin Id="P9qIcBPUhCRNjDrynt2ywT" Name="Input" Kind="InputPin" />
+            <Node Bounds="142,404,100,78" Id="SCqlTTcZ0rvPSNIx0ltebX">
+              <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="VL.CoreLib.dll">
+                <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
+                <Choice Kind="ApplicationStatefulRegion" Name="If" />
+                <FullNameCategoryReference ID="Primitive" />
+              </p:NodeReference>
+              <Pin Id="NCiMxqO2iOvMinr0Eevm29" Name="Condition" Kind="InputPin" />
+              <Patch Id="BPdRRvFGf06L0rSDTOGAct" ManuallySortedPins="true">
+                <Patch Id="GhwcI743CHeLYd0la9aY8N" Name="Create" ManuallySortedPins="true" />
+                <Patch Id="VwUs5M6ruSuLLrs2zLrKNf" Name="Then" ManuallySortedPins="true" />
+                <Node Bounds="154,432,76,26" AutoConnect="true" Id="Vi3xZET30bxNoPrwjKzKDk">
+                  <p:NodeReference LastCategoryFullName="StringExtensionLibrary.StringExtensions" LastSymbolSource="StringExtensionLibrary.dll">
+                    <Choice Kind="OperationNode" Name="Left" />
+                    <FullNameCategoryReference ID="StringExtensionLibrary.StringExtensions" />
+                  </p:NodeReference>
+                  <Pin Id="FXSQVTfVLD2PdpJFubjwt9" Name="Input" Kind="StateInputPin" />
+                  <Pin Id="D9AXtS8MgH1QL2RyEMrao7" Name="Length" Kind="InputPin" />
+                  <Pin Id="AjkCxPmCgt5P1QE6TM5hjm" Name="Output" Kind="OutputPin" />
+                </Node>
+              </Patch>
+              <ControlPoint Id="RNLzgGPpHsZQM5djQam6iY" Bounds="156,476" Alignment="Bottom" />
+              <ControlPoint Id="Gj09XzZjlqxNVqfpxPGuxm" Bounds="157,410" Alignment="Top" />
+            </Node>
+            <Link Id="CknXYfSivQDL0QHTBjKi47" Ids="P4x2X7LLus3OBw1U6TwFjZ,D9AXtS8MgH1QL2RyEMrao7" />
+            <ControlPoint Id="P4x2X7LLus3OBw1U6TwFjZ" Bounds="228,392" />
+            <Pin Id="N1RTrFvkCgMOWbBXfPyGoq" Name="Length" Kind="InputPin" Bounds="228,391" />
+            <Link Id="Cd8pm4GROE6Ltix5fgMXg9" Ids="N1RTrFvkCgMOWbBXfPyGoq,P4x2X7LLus3OBw1U6TwFjZ" IsHidden="true" />
+            <Node Bounds="142,341,81,19" Id="EmNybuomYXKOGKyBPYfES9">
+              <p:NodeReference LastCategoryFullName="Primitive.String" LastSymbolSource="CoreLibBasics.vl">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <Choice Kind="OperationCallFlag" Name="IsNullOrEmpty" />
+              </p:NodeReference>
+              <Pin Id="PEHMLOCPZFBPpMI9hwS5Da" Name="Input" Kind="StateInputPin" />
+              <Pin Id="PFu2EgSZyZhMOO1XfiOUIG" Name="Result" Kind="OutputPin" />
+            </Node>
+            <Link Id="Eniw70phcx1QQc6QadUMby" Ids="PFu2EgSZyZhMOO1XfiOUIG,NlIyfC1Si3zLySxUH0MYNA" />
+            <Node Bounds="142,371,37,19" Id="N6MqzW20SA8LupSe4hEXQK">
+              <p:NodeReference LastCategoryFullName="Primitive.Boolean" LastSymbolSource="CoreLibBasics.vl">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <Choice Kind="OperationCallFlag" Name="NOT" />
+              </p:NodeReference>
+              <Pin Id="NlIyfC1Si3zLySxUH0MYNA" Name="Input" Kind="StateInputPin" />
+              <Pin Id="BtttJpajna9P8SyMdEBZTQ" Name="Output" Kind="StateOutputPin" />
+            </Node>
+            <Link Id="JoDnaw0axQ1LdcPJahdcbx" Ids="BtttJpajna9P8SyMdEBZTQ,NCiMxqO2iOvMinr0Eevm29" />
+            <ControlPoint Id="PDX09H5caLnQNfWJSJ6NwI" Bounds="155,320" />
+            <Link Id="IgPg0PqKAkaLBVpOOBsu73" Ids="PDX09H5caLnQNfWJSJ6NwI,PEHMLOCPZFBPpMI9hwS5Da" />
+            <Link Id="QkvyjLDh69UPwwTjaQLAy3" Ids="P9qIcBPUhCRNjDrynt2ywT,PDX09H5caLnQNfWJSJ6NwI" IsHidden="true" />
+            <Link Id="LVkL3LSDrThNtiTbFR2sIo" Ids="PDX09H5caLnQNfWJSJ6NwI,FXSQVTfVLD2PdpJFubjwt9" />
+            <Link Id="IGNqLrJvOz9OTnLGYMgTW6" Ids="Gj09XzZjlqxNVqfpxPGuxm,RNLzgGPpHsZQM5djQam6iY" IsFeedback="true" />
+            <Link Id="BOWwwzifOqaPczI6BWcZL0" Ids="AjkCxPmCgt5P1QE6TM5hjm,RNLzgGPpHsZQM5djQam6iY" />
+            <Link Id="KPnwO4N0fhiNrSkZTkhsji" Ids="RNLzgGPpHsZQM5djQam6iY,Vmr37fNNrskPdziL0Tp3Qc" />
+            <ControlPoint Id="Vmr37fNNrskPdziL0Tp3Qc" Bounds="156,498" />
+            <Pin Id="SaNYIZdpSroOWm7H3RntVI" Name="Output" Kind="OutputPin" Bounds="156,499" />
+            <Link Id="M8d9pKlBO22Llvd3ktzML3" Ids="Vmr37fNNrskPdziL0Tp3Qc,SaNYIZdpSroOWm7H3RntVI" IsHidden="true" />
+          </Patch>
+        </Node>
+        <!--
+
+    ************************ Right ************************
+
+-->
+        <Node Name="Right" Bounds="311,307,164,218" Id="JaazQoOwtsMPicGXPZT5s1">
+          <p:NodeReference>
+            <Choice Kind="OperationDefinition" Name="Operation" />
+            <FullNameCategoryReference ID="Primitive" />
+          </p:NodeReference>
+          <p:HideCategory p:Type="Boolean">false</p:HideCategory>
+          <Patch Id="Q6rA2UZmZW2QdSH6V7UfxR">
+            <Node Bounds="334,406,100,80" Id="OCgRKW4NEgkL268yH6TQxu">
+              <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="VL.CoreLib.dll">
+                <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
+                <Choice Kind="ApplicationStatefulRegion" Name="If" />
+                <FullNameCategoryReference ID="Primitive" />
+              </p:NodeReference>
+              <Pin Id="UbcjrbeCZVYN9PoCkAFmiz" Name="Condition" Kind="InputPin" />
+              <Patch Id="VJGAKUF14kBPmjxwLByln1" ManuallySortedPins="true">
+                <Patch Id="H7jFbWq49UeQJhMUZX4FNM" Name="Create" ManuallySortedPins="true" />
+                <Patch Id="P3T28C6gnmRMJk8JKi14MJ" Name="Then" ManuallySortedPins="true" />
+                <Node Bounds="346,435,76,26" AutoConnect="true" Id="TJW5UPrgAD5O1ftGyfqsHW">
+                  <p:NodeReference LastCategoryFullName="StringExtensionLibrary.StringExtensions" LastSymbolSource="StringExtensionLibrary.dll">
+                    <Choice Kind="OperationNode" Name="Right" />
+                    <FullNameCategoryReference ID="StringExtensionLibrary.StringExtensions" />
+                  </p:NodeReference>
+                  <Pin Id="ObbMq4jDu5uQKDYUgjsmwl" Name="Input" Kind="StateInputPin" />
+                  <Pin Id="JCn2Oc1S2bgPzKwLKCGgkH" Name="Length" Kind="InputPin" />
+                  <Pin Id="IppHxu4Ey6QQcgFFDT0ivA" Name="Output" Kind="OutputPin" />
+                </Node>
+              </Patch>
+              <ControlPoint Id="QHuBZRJ9eCMNVafbB1xpVv" Bounds="348,480" Alignment="Bottom" />
+              <ControlPoint Id="JVIE3t6jmEVPx21ortO7Q8" Bounds="348,412" Alignment="Top" />
+            </Node>
+            <Node Bounds="334,341,81,19" Id="HjcaNv65MYKOn2rdUkQTaf">
+              <p:NodeReference LastCategoryFullName="Primitive.String" LastSymbolSource="CoreLibBasics.vl">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <Choice Kind="OperationCallFlag" Name="IsNullOrEmpty" />
+              </p:NodeReference>
+              <Pin Id="CbD1YeNdZyaOYLO33yMGtS" Name="Input" Kind="StateInputPin" />
+              <Pin Id="N04s7XznvHJORtfnUN5flr" Name="Result" Kind="OutputPin" />
+            </Node>
+            <Node Bounds="334,371,37,19" Id="AYmZ613ZxSfOMzJho19AOM">
+              <p:NodeReference LastCategoryFullName="Primitive.Boolean" LastSymbolSource="CoreLibBasics.vl">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <Choice Kind="OperationCallFlag" Name="NOT" />
+              </p:NodeReference>
+              <Pin Id="MCHpNRBGkiCP3jtutyWJeM" Name="Input" Kind="StateInputPin" />
+              <Pin Id="SMwEKRcv9XdODpzn7VoTEr" Name="Output" Kind="StateOutputPin" />
+            </Node>
+            <Link Id="UzcxADRl7BULWlYB3pDLDJ" Ids="N04s7XznvHJORtfnUN5flr,MCHpNRBGkiCP3jtutyWJeM" />
+            <Link Id="VT4RPN1PDPpLqqAgwkfdIr" Ids="SMwEKRcv9XdODpzn7VoTEr,UbcjrbeCZVYN9PoCkAFmiz" />
+            <ControlPoint Id="KB8xadwaVJyNT9TXYPawbs" Bounds="347,325" />
+            <Link Id="Dt4D5ituORXOWnSgHnanlV" Ids="KB8xadwaVJyNT9TXYPawbs,CbD1YeNdZyaOYLO33yMGtS" />
+            <Pin Id="Q4aCA8kl6wpM9LWJ7gQxfr" Name="Input" Kind="InputPin" Bounds="352,323" />
+            <Link Id="AEljU1L3WlfNrtL4cytTFC" Ids="Q4aCA8kl6wpM9LWJ7gQxfr,KB8xadwaVJyNT9TXYPawbs" IsHidden="true" />
+            <Link Id="UoYrhSFh4GoLGyUsK6cOic" Ids="KB8xadwaVJyNT9TXYPawbs,ObbMq4jDu5uQKDYUgjsmwl" />
+            <Link Id="Rba9oaP29DWMTlSCQCYTIR" Ids="JVIE3t6jmEVPx21ortO7Q8,QHuBZRJ9eCMNVafbB1xpVv" IsFeedback="true" />
+            <Link Id="QXmCPeJ1gUHQPO04aMzDsM" Ids="IppHxu4Ey6QQcgFFDT0ivA,QHuBZRJ9eCMNVafbB1xpVv" />
+            <Link Id="IyCFrkq5s1jNkW7k1xe8kq" Ids="QHuBZRJ9eCMNVafbB1xpVv,QxLCOSiuA7VNi6JPKAi1Td" />
+            <ControlPoint Id="QxLCOSiuA7VNi6JPKAi1Td" Bounds="348,508" />
+            <Pin Id="SyR8y8CYKLVN8ZbFuvSRhP" Name="Output" Kind="OutputPin" Bounds="349,506" />
+            <Link Id="G0Q7LS3OekYMrH726R4gdE" Ids="QxLCOSiuA7VNi6JPKAi1Td,SyR8y8CYKLVN8ZbFuvSRhP" IsHidden="true" />
+            <Link Id="SUBmBIOwLzbMF9nS5Uvvxd" Ids="Heu24ZkTA85QB49lDo4vPV,JCn2Oc1S2bgPzKwLKCGgkH" />
+            <ControlPoint Id="Heu24ZkTA85QB49lDo4vPV" Bounds="420,389" />
+            <Pin Id="BxTtuQn6e6jPXrdOfsfabd" Name="Length" Kind="InputPin" Bounds="427,390" />
+            <Link Id="IRK52503kuvNNbdgmf7sjv" Ids="BxTtuQn6e6jPXrdOfsfabd,Heu24ZkTA85QB49lDo4vPV" IsHidden="true" />
+          </Patch>
+        </Node>
+        <!--
+
+    ************************ FirstCharacter ************************
+
+-->
+        <Node Name="FirstCharacter" Bounds="135,160,112,80" Id="MrbnN0PO1HHPFrmeB4lu5m">
+          <p:NodeReference>
+            <Choice Kind="OperationDefinition" Name="Operation" />
+            <FullNameCategoryReference ID="Primitive" />
+          </p:NodeReference>
+          <p:HideCategory p:Type="Boolean">false</p:HideCategory>
+          <Patch Id="Pmz6RDjRYJ2OqxrUW2DZj2">
+            <Node Bounds="147,189,80,26" AutoConnect="true" Id="Qqd5hmOoZJbMXKcYOiIaDz">
+              <p:NodeReference LastCategoryFullName="StringExtensionLibrary.StringExtensions" LastSymbolSource="StringExtensionLibrary.dll">
+                <Choice Kind="OperationNode" Name="FristCharacter" />
+                <FullNameCategoryReference ID="StringExtensionLibrary.StringExtensions" />
+              </p:NodeReference>
+              <Pin Id="FzFEUWx59X0LQ7Ikj3od60" Name="Input" Kind="StateInputPin" />
+              <Pin Id="MfxYs77hFDwLtMnj7AMutT" Name="Output" Kind="OutputPin" />
+            </Node>
+            <Pin Id="UkJvhU4qsNGP712pxxQOXx" Name="Input" Kind="InputPin" />
+            <Pin Id="UtguRnfdJsVMXAjXz2Ks4k" Name="Output" Kind="OutputPin" />
+          </Patch>
+        </Node>
+        <!--
+
+    ************************ KeepAllSpecialCharacters ************************
+
+-->
+        <Node Name="KeepAllSpecialCharacters" Bounds="139,668,155,80" Id="LLcGynjSav6LJLOMMAuw97">
+          <p:NodeReference>
+            <Choice Kind="OperationDefinition" Name="Operation" />
+            <FullNameCategoryReference ID="Primitive" />
+          </p:NodeReference>
+          <p:HideCategory p:Type="Boolean">false</p:HideCategory>
+          <Patch Id="GNTtA4vo46yLyFZPLxxGUL">
+            <Node Bounds="151,697,131,26" AutoConnect="true" Id="C2UVATMuAw0QM5R7ckIZFz">
+              <p:NodeReference LastCategoryFullName="String.Extensions.Keeper" LastSymbolSource="String.Extensions.dll">
+                <Choice Kind="OperationNode" Name="KeepAllSpecialCharacters" />
+                <FullNameCategoryReference ID="String.Extensions.Keeper" />
+              </p:NodeReference>
+              <Pin Id="DULkdl1CQ2PMc2NnG8N96p" Name="Input" Kind="StateInputPin" />
+              <Pin Id="Ag3D61Hgx4eLLQ7L0S51FJ" Name="Output" Kind="OutputPin" />
+            </Node>
+            <Pin Id="MJVZV09vPKDLCvyG4ymPsK" Name="Input" Kind="InputPin" />
+            <Pin Id="FTpdyJRtzIINL1KI443uq8" Name="Output" Kind="OutputPin" />
+          </Patch>
+        </Node>
+        <!--
+
+    ************************ KeepOnlyAlphabeticalLetters ************************
+
+-->
+        <Node Name="KeepOnlyAlphabeticalLetters" Bounds="348,671,170,80" Id="IXMtZGLVLdMPqhnucKY8EF">
+          <p:NodeReference>
+            <Choice Kind="OperationDefinition" Name="Operation" />
+            <FullNameCategoryReference ID="Primitive" />
+          </p:NodeReference>
+          <p:HideCategory p:Type="Boolean">false</p:HideCategory>
+          <Patch Id="KdajBGexqJbOG65tcrgkSn">
+            <Node Bounds="360,700,146,26" AutoConnect="true" Id="LZp2yIPgTz1QHt6lozmuBa">
+              <p:NodeReference LastCategoryFullName="String.Extensions.Keeper" LastSymbolSource="String.Extensions.dll">
+                <Choice Kind="OperationNode" Name="KeepOnlyAlphabeticalLetters" />
+                <FullNameCategoryReference ID="String.Extensions.Keeper" />
+              </p:NodeReference>
+              <Pin Id="GVvK6ojGy5tLz1eVmASVDY" Name="Input" Kind="StateInputPin" />
+              <Pin Id="AC7BxUHkzDuNqON1jA8oc1" Name="Output" Kind="OutputPin" />
+            </Node>
+            <Pin Id="RmN7EMyS9kINxk1H0OrLiu" Name="Input" Kind="InputPin" />
+            <Pin Id="AKmeqzZWjXiO5g2oUEW45b" Name="Output" Kind="OutputPin" />
+          </Patch>
+        </Node>
+        <!--
+
+    ************************ KeepOnlyNumbers ************************
+
+-->
+        <Node Name="KeepOnlyNumbers" Bounds="583,673,125,80" Id="DhwEmhSpvusM6TnrAbFeJ3">
+          <p:NodeReference>
+            <Choice Kind="OperationDefinition" Name="Operation" />
+            <FullNameCategoryReference ID="Primitive" />
+          </p:NodeReference>
+          <p:HideCategory p:Type="Boolean">false</p:HideCategory>
+          <Patch Id="EwDb0TTtapCPJi2vMQWS7N">
+            <Node Bounds="595,702,101,26" AutoConnect="true" Id="K5ALK8rrpX3OxjizbyfuK0">
+              <p:NodeReference LastCategoryFullName="String.Extensions.Keeper" LastSymbolSource="String.Extensions.dll">
+                <Choice Kind="OperationNode" Name="KeepOnlyNumbers" />
+                <FullNameCategoryReference ID="String.Extensions.Keeper" />
+              </p:NodeReference>
+              <Pin Id="DZdHcs3kGcQOu8GClmiPb9" Name="Input" Kind="StateInputPin" />
+              <Pin Id="PtTdOlOKfomLskfJqYsIF5" Name="Output" Kind="OutputPin" />
+            </Node>
+            <Pin Id="HVwnD17oI6SPXZ4sb01chv" Name="Input" Kind="InputPin" />
+            <Pin Id="MWMzikfVDF4Mt0E9czWHPo" Name="Output" Kind="OutputPin" />
+          </Patch>
+        </Node>
+      </Canvas>
+      <Canvas Id="RUHsvWuPHXxMzkbhL3Ic8D" Name="Modification" Position="120,302">
+        <!--
+
+    ************************ AppendPrefixIfMissing ************************
+
+-->
+        <Node Name="AppendPrefixIfMissing" Bounds="99,122,127,80" Id="ROzpQLZ44m8M9eG3QP0kqU">
+          <p:NodeReference>
+            <Choice Kind="OperationDefinition" Name="Operation" />
+            <FullNameCategoryReference ID="Primitive" />
+          </p:NodeReference>
+          <p:HideCategory p:Type="Boolean">false</p:HideCategory>
+          <Patch Id="JGxIO0LJAklOFnqF4sbkoU">
+            <Node Bounds="111,150,76,26" AutoConnect="true" Id="UjwM7AaEQ89MCboQ6y4gc8">
+              <p:NodeReference LastCategoryFullName="StringExtensionLibrary.StringExtensions" LastSymbolSource="StringExtensionLibrary.dll">
+                <Choice Kind="OperationNode" Name="AppendPrefixIfMissing" />
+                <FullNameCategoryReference ID="StringExtensionLibrary.StringExtensions" />
+              </p:NodeReference>
+              <Pin Id="EV9H5JGhABLOF6SPw3kZ5H" Name="Input" Kind="StateInputPin" />
+              <Pin Id="QTjlbC8IdNwMVYRjkIjBvU" Name="Prefix" Kind="InputPin" />
+              <Pin Id="F3ZpIYQ1l5SPHHjXmdAme7" Name="Ignore Case" Kind="InputPin" />
+              <Pin Id="B8ZStAxFyBeMo6wviVbTuE" Name="Output" Kind="OutputPin" />
+            </Node>
+            <Pin Id="HkEK1Or6b3pLuXj1pEPzsa" Name="Input" Kind="InputPin" />
+            <Pin Id="VWtcn8sjEupLnmNwv3TrF0" Name="Prefix" Kind="InputPin" />
+            <Pin Id="J3uk8WPqAerQLt1J4MPhGr" Name="Ignore Case" Kind="InputPin" />
+            <Pin Id="IGhdCPtexrULgMrvYsxzyG" Name="Output" Kind="OutputPin" />
+          </Patch>
+        </Node>
+        <!--
+
+    ************************ AppendSuffixIfMissing ************************
+
+-->
+        <Node Name="AppendSuffixIfMissing" Bounds="310,126,142,80" Id="IiHEAJ5CtJJQD2iVmvHvPA">
+          <p:NodeReference>
+            <Choice Kind="OperationDefinition" Name="Operation" />
+            <FullNameCategoryReference ID="Primitive" />
+          </p:NodeReference>
+          <p:HideCategory p:Type="Boolean">false</p:HideCategory>
+          <Patch Id="V6PdpCp95iBMsubZa0KOcl">
+            <Node Bounds="322,154,118,26" AutoConnect="true" Id="L0tL38VnUIuMjRo9PeAqdk">
+              <p:NodeReference LastCategoryFullName="StringExtensionLibrary.StringExtensions" LastSymbolSource="StringExtensionLibrary.dll">
+                <Choice Kind="OperationNode" Name="AppendSuffixIfMissing" />
+                <FullNameCategoryReference ID="StringExtensionLibrary.StringExtensions" />
+              </p:NodeReference>
+              <Pin Id="PXcApu2YOk9OoVZRB2wmBW" Name="Input" Kind="StateInputPin" />
+              <Pin Id="RvyztavyY14NRasxLOWXrt" Name="Suffix" Kind="InputPin" />
+              <Pin Id="O6vD1YPuprBNMogNcAbTt5" Name="Ignore Case" Kind="InputPin" />
+              <Pin Id="B1WBNYFlABpMJW1xzSUeUh" Name="Output" Kind="OutputPin" />
+            </Node>
+            <Pin Id="DMTQFAfqc1dMQ59JdzpT63" Name="Input" Kind="InputPin" />
+            <Pin Id="Lz5CbATwtM6OdNbBgCudZD" Name="Suffix" Kind="InputPin" />
+            <Pin Id="JvekAzfWjorLFQlCZ1sNmx" Name="Ignore Case" Kind="InputPin" />
+            <Pin Id="Af8JiOQswTLLZbKR6XnLqW" Name="Output" Kind="OutputPin" />
+          </Patch>
+        </Node>
+        <!--
+
+    ************************ ReplaceLineFeeds ************************
+
+-->
+        <Node Name="ReplaceLineFeeds" Bounds="309,300,120,80" Id="OO3k8Oh4PrNMKhWd3kb3hK">
+          <p:NodeReference>
+            <Choice Kind="OperationDefinition" Name="Operation" />
+            <FullNameCategoryReference ID="Primitive" />
+          </p:NodeReference>
+          <p:HideCategory p:Type="Boolean">false</p:HideCategory>
+          <Patch Id="MElAPzqp9vzMT3myOFd0Qp">
+            <Node Bounds="321,329,96,26" AutoConnect="true" Id="UeCjpZjAtwoMmxnDoSfC6j">
+              <p:NodeReference LastCategoryFullName="StringExtensionLibrary.StringExtensions" LastSymbolSource="StringExtensionLibrary.dll">
+                <Choice Kind="OperationNode" Name="ReplaceLineFeeds" />
+                <FullNameCategoryReference ID="StringExtensionLibrary.StringExtensions" />
+              </p:NodeReference>
+              <Pin Id="MeXhfd9EpeULr4VQEm8nEc" Name="Input" Kind="StateInputPin" />
+              <Pin Id="Pc86ddwRSo8NjBeLZMByWZ" Name="Output" Kind="OutputPin" />
+            </Node>
+            <Pin Id="Vvpp3rnegSJNkKKfCkjtvv" Name="Input" Kind="InputPin" />
+            <Pin Id="DiXoagaQpxrNZk2P1FJNxy" Name="Output" Kind="OutputPin" />
+          </Patch>
+        </Node>
+        <!--
+
+    ************************ Reverse ************************
+
+-->
+        <Node Name="Reverse" Bounds="492,298,112,80" Id="FnhuRpExuXlLw7AtjUtJgl">
+          <p:NodeReference>
+            <Choice Kind="OperationDefinition" Name="Operation" />
+            <FullNameCategoryReference ID="Primitive" />
+          </p:NodeReference>
+          <p:HideCategory p:Type="Boolean">false</p:HideCategory>
+          <Patch Id="Elp0VRwFYtDO1wBTg3m7MH">
+            <Node Bounds="504,327,76,26" AutoConnect="true" Id="F8LYSCnS5ypOWcyh5rr53n">
+              <p:NodeReference LastCategoryFullName="StringExtensionLibrary.StringExtensions" LastSymbolSource="StringExtensionLibrary.dll">
+                <Choice Kind="OperationNode" Name="Reverse" />
+                <FullNameCategoryReference ID="StringExtensionLibrary.StringExtensions" />
+              </p:NodeReference>
+              <Pin Id="EVBh5a2clLPNnw4mOHQBiB" Name="Input" Kind="StateInputPin" />
+              <Pin Id="CiIPOEsGY5NOGTsL4abghi" Name="Output" Kind="OutputPin" />
+            </Node>
+            <Pin Id="MTzNYflQcBpMA64fvPegCI" Name="Input" Kind="InputPin" />
+            <Pin Id="RWaCJixtJB3LSxITgIpbcH" Name="Output" Kind="OutputPin" />
+          </Patch>
+        </Node>
+        <!--
+
+    ************************ ReverseSlash ************************
+
+-->
+        <Node Name="ReverseSlash" Bounds="644,300,112,80" Id="KPECQBxTCUXMAklTZYvoUt">
+          <p:NodeReference>
+            <Choice Kind="OperationDefinition" Name="Operation" />
+            <FullNameCategoryReference ID="Primitive" />
+          </p:NodeReference>
+          <p:HideCategory p:Type="Boolean">false</p:HideCategory>
+          <Patch Id="SMQOsIC19QANL5uCBppdi4">
+            <Node Bounds="656,329,76,26" AutoConnect="true" Id="ObNNwIZgkG7N2qMV297P8m">
+              <p:NodeReference LastCategoryFullName="StringExtensionLibrary.StringExtensions" LastSymbolSource="StringExtensionLibrary.dll">
+                <Choice Kind="OperationNode" Name="ReverseSlash" />
+                <FullNameCategoryReference ID="StringExtensionLibrary.StringExtensions" />
+              </p:NodeReference>
+              <Pin Id="R4S8WENwwqTOsgDkOPHXs7" Name="Input" Kind="StateInputPin" />
+              <Pin Id="UANSO9qxMlpNatUnJf4FRa" Name="Direction" Kind="InputPin" />
+              <Pin Id="FPs0y14dFLVNTDSQEyJQaZ" Name="Output" Kind="OutputPin" />
+            </Node>
+            <Pin Id="NSnhPoYpyxsL68AS9zt3R3" Name="Input" Kind="InputPin" />
+            <Pin Id="DWe9bQg5x6BMOo45P8WfIR" Name="Direction" Kind="InputPin" />
+            <Pin Id="Mj8HediFBDyMOjvmmBMs2f" Name="Output" Kind="OutputPin" />
+          </Patch>
+        </Node>
+        <!--
+
+    ************************ SplitTo ************************
+
+-->
+        <Node Name="SplitTo" Bounds="113,430,178,182" Id="AeE8ooNT02kLteCpgHoEKl">
+          <p:NodeReference>
+            <Choice Kind="OperationDefinition" Name="Operation" />
+            <FullNameCategoryReference ID="Primitive" />
+          </p:NodeReference>
+          <p:HideCategory p:Type="Boolean">false</p:HideCategory>
+          <Patch Id="HEXA3gSmsggNFQwcMKWfar">
+            <Node Bounds="125,509,76,26" AutoConnect="true" Id="JdXqxQB7P4FNC6js8WSvJY">
+              <p:NodeReference LastCategoryFullName="StringExtensionLibrary.StringExtensions" LastSymbolSource="StringExtensionLibrary.dll">
+                <Choice Kind="OperationNode" Name="SplitTo" />
+                <FullNameCategoryReference ID="StringExtensionLibrary.StringExtensions" />
+                <PinReference Kind="InputPin" Name="Input" />
+                <PinReference Kind="InputPin" Name="Options" />
+              </p:NodeReference>
+              <Pin Id="PhRwFhb2cTcLUie2R6jfWV" Name="Input" Kind="StateInputPin" />
+              <Pin Id="NfVfNrlRa4gNezCzEfkhqE" Name="Options" Kind="InputPin" />
+              <Pin Id="Qn5IEbx39zDOQ4EJeq8i7b" Name="Separator" Kind="InputPin" />
+              <Pin Id="K8HVm5XwexfNvQeBsZRb0P" Name="Result" Kind="OutputPin" />
+            </Node>
+            <Node Bounds="196,466,83,26" Id="AtsP3RaLLoCMWBoTGD4RcI">
+              <p:NodeReference LastCategoryFullName="Collections.Mutable.MutableArray" LastSymbolSource="VL.Collections.vl">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <Choice Kind="OperationCallFlag" Name="FromSequence" />
+                <CategoryReference Kind="ArrayType" Name="MutableArray" NeedsToBeDirectParent="true" />
+              </p:NodeReference>
+              <Pin Id="QvkdKmHwYf1PnHHEwwWJ8b" Name="Input" Kind="StateInputPin" />
+              <Pin Id="HmnMB7aUsPOOhu0JuDvSfc" Name="Result" Kind="OutputPin" />
+            </Node>
+            <ControlPoint Id="HrMHUL9QfuxPzyclT5do1K" Bounds="198,448" />
+            <Link Id="EjoMpOhoYjaQVe21JF7FLp" Ids="HrMHUL9QfuxPzyclT5do1K,QvkdKmHwYf1PnHHEwwWJ8b" />
+            <Link Id="IRhczhPNrBzO8go0AqsWpx" Ids="FhukG79zcvgP9RQwcuz0g8,HrMHUL9QfuxPzyclT5do1K" IsHidden="true" />
+            <Pin Id="FhukG79zcvgP9RQwcuz0g8" Name="Separator" Kind="InputPin" Bounds="954,837">
+              <p:TypeAnnotation>
+                <Choice Kind="TypeFlag" Name="Sequence" />
+                <p:TypeArguments>
+                  <TypeReference>
+                    <Choice Kind="TypeFlag" Name="Char" />
+                  </TypeReference>
+                </p:TypeArguments>
+              </p:TypeAnnotation>
+            </Pin>
+            <Pin Id="BXg8XSIpxHfNGEo1FL8ADq" Name="Input" Kind="InputPin" />
+            <Pin Id="HxiTWWDNUk3LD0uCOQIMBa" Name="Options" Kind="InputPin" />
+            <Link Id="RIKZrpHS3WWMOu8vAFw9LF" Ids="HmnMB7aUsPOOhu0JuDvSfc,Qn5IEbx39zDOQ4EJeq8i7b" />
+            <ControlPoint Id="RhP9iVsmJI9MwJkAjMugEe" Bounds="127,595" />
+            <Pin Id="TW8AwwBVOK8NyGIP9WpHZ4" Name="Result" Kind="OutputPin" Bounds="138,556">
+              <p:TypeAnnotation>
+                <Choice Kind="TypeFlag" Name="Spread" />
+                <p:TypeArguments>
+                  <TypeReference>
+                    <Choice Kind="TypeFlag" Name="String" />
+                  </TypeReference>
+                </p:TypeArguments>
+              </p:TypeAnnotation>
+            </Pin>
+            <Link Id="Tg0h9n6IGH5N7qknNI26H9" Ids="RhP9iVsmJI9MwJkAjMugEe,TW8AwwBVOK8NyGIP9WpHZ4" IsHidden="true" />
+            <Node Bounds="125,548,83,26" Id="R4ctX15fMDiK9mM6di1HsO">
+              <p:NodeReference LastCategoryFullName="Collections.Spread" LastSymbolSource="VL.Collections.vl">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <Choice Kind="OperationCallFlag" Name="FromSequence" />
+                <CategoryReference Kind="RecordType" Name="Spread" NeedsToBeDirectParent="true" />
+              </p:NodeReference>
+              <Pin Id="CEmlWUwTSZGLUtav83kE8T" Name="Input" Kind="StateInputPin" />
+              <Pin Id="Mpv5w1NlrEaL2wV8vVUGkF" Name="Result" Kind="OutputPin" />
+            </Node>
+            <Link Id="Q8FZoeTvEHUPQjRuYLe7i0" Ids="K8HVm5XwexfNvQeBsZRb0P,CEmlWUwTSZGLUtav83kE8T" />
+            <Link Id="HUni2MwgyOVOvro8hxd8Yf" Ids="Mpv5w1NlrEaL2wV8vVUGkF,RhP9iVsmJI9MwJkAjMugEe" />
+          </Patch>
+        </Node>
+        <!--
+
+    ************************ Remove ************************
+
+-->
+        <Node Name="Remove" Bounds="120,731,154,128" Id="LfgmzWfK2wzPpmuEIPwqow">
+          <p:NodeReference>
+            <Choice Kind="OperationDefinition" Name="Operation" />
+            <FullNameCategoryReference ID="Primitive" />
+          </p:NodeReference>
+          <p:HideCategory p:Type="Boolean">false</p:HideCategory>
+          <Patch Id="OxwsPcBH8A8LN2mLDiSKmj">
+            <Node Bounds="132,813,52,26" AutoConnect="true" Id="S2vsWEKoarSOO098anI2aP">
+              <p:NodeReference LastCategoryFullName="String.Extensions.Remover" LastSymbolSource="String.Extensions.dll">
+                <Choice Kind="OperationNode" Name="Remove" />
+                <FullNameCategoryReference ID="String.Extensions.Remover" />
+              </p:NodeReference>
+              <Pin Id="MXR2SpKUZCGOibc3KZ1D3i" Name="Input" Kind="StateInputPin" />
+              <Pin Id="MI3NP4rLidjNEjUAiYjpts" Name="To Remove" Kind="InputPin" />
+              <Pin Id="Aqc6z2TPD74O2B1NnQuq2X" Name="Output" Kind="OutputPin" />
+            </Node>
+            <Node Bounds="179,767,83,26" Id="EAm3zH0dyscM9oxpbvFdPl">
+              <p:NodeReference LastCategoryFullName="Collections.Mutable.MutableArray" LastSymbolSource="VL.Collections.vl">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <Choice Kind="OperationCallFlag" Name="FromSequence" />
+                <CategoryReference Kind="ArrayType" Name="MutableArray" NeedsToBeDirectParent="true" />
+              </p:NodeReference>
+              <Pin Id="K66gj7aYvRyMR0LRvkk9cY" Name="Input" Kind="StateInputPin" />
+              <Pin Id="OYWN9XqN2V6LB5ct9s4vQV" Name="Result" Kind="OutputPin" />
+            </Node>
+            <ControlPoint Id="C4DKQsOcZu8MDieWKFOyCd" Bounds="181,749" />
+            <Link Id="C6gPJoToghcPGAn2tdBXQd" Ids="C4DKQsOcZu8MDieWKFOyCd,K66gj7aYvRyMR0LRvkk9cY" />
+            <Link Id="Aye1KViHvujMH9NdlHhDis" Ids="Ra5fqZ47n6RLf4nsr2Pb9y,C4DKQsOcZu8MDieWKFOyCd" IsHidden="true" />
+            <Link Id="PAyD726JAamNc2QDq8PTUy" Ids="OYWN9XqN2V6LB5ct9s4vQV,MI3NP4rLidjNEjUAiYjpts" />
+            <Pin Id="Ra5fqZ47n6RLf4nsr2Pb9y" Name="To Remove" Kind="InputPin" />
+            <Pin Id="E2VwIlPIJMtLfCp8W2Nfw7" Name="Input" Kind="InputPin" />
+            <Pin Id="FR1a8bVKVBdNrFiOgZPtRi" Name="Output" Kind="OutputPin" />
+          </Patch>
+        </Node>
+        <!--
+
+    ************************ Remove ************************
+
+-->
+        <Node Name="Remove" Bounds="345,786,154,122" Id="AkfqpXlNz6nN9vYo5sM211">
+          <p:NodeReference>
+            <Choice Kind="OperationDefinition" Name="Operation" />
+            <FullNameCategoryReference ID="Primitive" />
+          </p:NodeReference>
+          <p:HideCategory p:Type="Boolean">false</p:HideCategory>
+          <Patch Id="VjAwdn1KbvdL9pBOfkJG8g">
+            <Node Bounds="357,862,52,26" AutoConnect="true" Id="FsXUFIgOdAAOBpYLokQhLJ">
+              <p:NodeReference LastCategoryFullName="String.Extensions.Remover" LastSymbolSource="String.Extensions.dll">
+                <Choice Kind="OperationNode" Name="Remove" />
+                <FullNameCategoryReference ID="String.Extensions.Remover" />
+                <PinReference Kind="InputPin" Name="Input" />
+                <PinReference Kind="InputPin" Name="Ignore Case" />
+              </p:NodeReference>
+              <Pin Id="PEmdNnUEVxRQR6aP2S6Zwn" Name="Input" Kind="StateInputPin" />
+              <Pin Id="RDJpaB0aRwXLLj7nl1pMQq" Name="Ignore Case" Kind="InputPin" />
+              <Pin Id="Gf3QfMf2qIwPfhiADMZWg9" Name="To Remove" Kind="InputPin" />
+              <Pin Id="G6n9jCzFKttO8WwlfAtmbj" Name="Output" Kind="OutputPin" />
+            </Node>
+            <Node Bounds="404,822,83,26" Id="C6lCJ9iTR9POdq8frwWA2X">
+              <p:NodeReference LastCategoryFullName="Collections.Mutable.MutableArray" LastSymbolSource="VL.Collections.vl">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <Choice Kind="OperationCallFlag" Name="FromSequence" />
+                <CategoryReference Kind="ArrayType" Name="MutableArray" NeedsToBeDirectParent="true" />
+              </p:NodeReference>
+              <Pin Id="SV49j3pauvLLUwoC2f3rxr" Name="Input" Kind="StateInputPin" />
+              <Pin Id="ToLYSGA8SpvMF411vEF5nm" Name="Result" Kind="OutputPin" />
+            </Node>
+            <Link Id="PsJVNSqdKUWMx5IDcMusW7" Ids="ToLYSGA8SpvMF411vEF5nm,Gf3QfMf2qIwPfhiADMZWg9" />
+            <ControlPoint Id="LHngVma1lFKPvDVB4XGutQ" Bounds="406,804" />
+            <Link Id="V4Ji6nZ54g9PN9BJTLKvJr" Ids="LHngVma1lFKPvDVB4XGutQ,SV49j3pauvLLUwoC2f3rxr" />
+            <Link Id="TrPdw7U5EbSLDt0oMg8ma0" Ids="Alrrhf86ThuMmwthCJX8to,LHngVma1lFKPvDVB4XGutQ" IsHidden="true" />
+            <Pin Id="Alrrhf86ThuMmwthCJX8to" Name="To Remove" Kind="InputPin" Bounds="954,837" />
+            <Pin Id="UZQhDw8mKulOAgAccFe416" Name="Input" Kind="InputPin" />
+            <Pin Id="A01Z9xTQsupMt61IB3I52J" Name="Ignore Case" Kind="InputPin" />
+            <Pin Id="PDPsXF4clxaNSt7zgGYNGM" Name="Output" Kind="OutputPin" />
+          </Patch>
+        </Node>
+        <!--
+
+    ************************ RemoveAllAlphabeticalLetters ************************
+
+-->
+        <Node Name="RemoveAllAlphabeticalLetters" Bounds="142,998,175,80" Id="FKnDpmIPkj6ODJpJ9vJ40t">
+          <p:NodeReference>
+            <Choice Kind="OperationDefinition" Name="Operation" />
+            <FullNameCategoryReference ID="Primitive" />
+          </p:NodeReference>
+          <p:HideCategory p:Type="Boolean">false</p:HideCategory>
+          <Patch Id="JZFwDZod0BGNeBNniQlhR1">
+            <Node Bounds="154,1027,151,26" AutoConnect="true" Id="RO5YlmmeqsENW9hulJuAIi">
+              <p:NodeReference LastCategoryFullName="String.Extensions.Remover" LastSymbolSource="String.Extensions.dll">
+                <Choice Kind="OperationNode" Name="RemoveAllAlphabeticalLetters" />
+                <FullNameCategoryReference ID="String.Extensions.Remover" />
+              </p:NodeReference>
+              <Pin Id="RwTxHb2QilOL78no4twQwS" Name="Input" Kind="StateInputPin" />
+              <Pin Id="BxutAW821n1PUTffdXPEVu" Name="Output" Kind="OutputPin" />
+            </Node>
+            <Pin Id="UBjbUUX9TOWNFjQTMzZZAo" Name="Input" Kind="InputPin" />
+            <Pin Id="PDn9NdBEcPoM5ZKinv6ccO" Name="Output" Kind="OutputPin" />
+          </Patch>
+        </Node>
+        <!--
+
+    ************************ RemoveAllNumbers ************************
+
+-->
+        <Node Name="RemoveAllNumbers" Bounds="626,1010,129,80" Id="StQnJXlk1OENO39LsxYdAc">
+          <p:NodeReference>
+            <Choice Kind="OperationDefinition" Name="Operation" />
+            <FullNameCategoryReference ID="Primitive" />
+          </p:NodeReference>
+          <p:HideCategory p:Type="Boolean">false</p:HideCategory>
+          <Patch Id="VvU2JamcbWBPc0JHrnQCts">
+            <Node Bounds="638,1039,105,26" AutoConnect="true" Id="NmoyBVZ1Wq7NwmRdLE6cGv">
+              <p:NodeReference LastCategoryFullName="String.Extensions.Remover" LastSymbolSource="String.Extensions.dll">
+                <Choice Kind="OperationNode" Name="RemoveAllNumbers" />
+                <FullNameCategoryReference ID="String.Extensions.Remover" />
+              </p:NodeReference>
+              <Pin Id="ECrBp1ELb5AMTXgU7EsOfz" Name="Input" Kind="StateInputPin" />
+              <Pin Id="PIr6fKMVulHLCnUJBghGTd" Name="Output" Kind="OutputPin" />
+            </Node>
+            <Pin Id="LszqCbYWUMcQARIbX8Y3Q4" Name="Input" Kind="InputPin" />
+            <Pin Id="VNKjypwDWqCPgKslyB23m3" Name="Output" Kind="OutputPin" />
+          </Patch>
+        </Node>
+        <!--
+
+    ************************ RemoveAllSpecialCharacters ************************
+
+-->
+        <Node Name="RemoveAllSpecialCharacters" Bounds="390,1004,168,80" Id="OcJZZDNUuYpP4roEHrwQED">
+          <p:NodeReference>
+            <Choice Kind="OperationDefinition" Name="Operation" />
+            <FullNameCategoryReference ID="Primitive" />
+          </p:NodeReference>
+          <p:HideCategory p:Type="Boolean">false</p:HideCategory>
+          <Patch Id="H3uWecldniGLQrprHqVi7e">
+            <Node Bounds="402,1032,144,26" AutoConnect="true" Id="UJFsJHJlyoHPHEHGrdcf9V">
+              <p:NodeReference LastCategoryFullName="String.Extensions.Remover" LastSymbolSource="String.Extensions.dll">
+                <Choice Kind="OperationNode" Name="RemoveAllSpecialCharacters" />
+                <FullNameCategoryReference ID="String.Extensions.Remover" />
+              </p:NodeReference>
+              <Pin Id="QV2RKfQHrsOMVk3TyPhK1f" Name="Input" Kind="StateInputPin" />
+              <Pin Id="OmgTe3WVIy0NWtEN9tQ7eW" Name="Output" Kind="OutputPin" />
+            </Node>
+            <Pin Id="Exkqrjr2cSjPIP65tpYptP" Name="Input" Kind="InputPin" />
+            <Pin Id="Ds6oNwHCwYZNgziHlQv3Dz" Name="Output" Kind="OutputPin" />
+          </Patch>
+        </Node>
+        <!--
+
+    ************************ Replace ************************
+
+-->
+        <Node Name="Replace" Bounds="328,596,153,118" Id="IbhhHHMTeeLNWus7UcOpWo">
+          <p:NodeReference>
+            <Choice Kind="OperationDefinition" Name="Operation" />
+            <FullNameCategoryReference ID="Primitive" />
+          </p:NodeReference>
+          <p:HideCategory p:Type="Boolean">false</p:HideCategory>
+          <Patch Id="QcnnASRp0rMOOlCY4m6wdt">
+            <Node Bounds="340,668,51,26" AutoConnect="true" Id="LcTWypJTL81NwoVVeLL038">
+              <p:NodeReference LastCategoryFullName="String.Extensions.Replacer" LastSymbolSource="String.Extensions.dll">
+                <Choice Kind="OperationNode" Name="Replace" />
+                <FullNameCategoryReference ID="String.Extensions.Replacer" />
+              </p:NodeReference>
+              <Pin Id="DF3vFJCRt7SQTmXXm22GZy" Name="Input" Kind="StateInputPin" />
+              <Pin Id="TwmuE22TibxNQYMYCgBNGK" Name="Replacer String" Kind="InputPin" />
+              <Pin Id="MCymDH3eai9Mpy6pBVrfRF" Name="To Replace" Kind="InputPin" />
+              <Pin Id="OYwXjYy5bd6MM0sltcRr0j" Name="Output" Kind="OutputPin" />
+            </Node>
+            <Node Bounds="386,631,83,26" Id="TjZeJ7IEj7xL0U8HPKMbx9">
+              <p:NodeReference LastCategoryFullName="Collections.Mutable.MutableArray" LastSymbolSource="VL.Collections.vl">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <Choice Kind="OperationCallFlag" Name="FromSequence" />
+                <CategoryReference Kind="ArrayType" Name="MutableArray" NeedsToBeDirectParent="true" />
+              </p:NodeReference>
+              <Pin Id="Jpm1uw64ybdPDE4pTsyeCq" Name="Input" Kind="StateInputPin" />
+              <Pin Id="LcEHQVceNSJNxRtxmplFEU" Name="Result" Kind="OutputPin" />
+            </Node>
+            <Link Id="MWkT0HKbVKkLZ3iUzWJJjs" Ids="LcEHQVceNSJNxRtxmplFEU,MCymDH3eai9Mpy6pBVrfRF" />
+            <ControlPoint Id="JQPdpJNYZqMNmGenmrtaiD" Bounds="388,614" />
+            <Link Id="DYHBp011ikZLVC4m4deSyA" Ids="JQPdpJNYZqMNmGenmrtaiD,Jpm1uw64ybdPDE4pTsyeCq" />
+            <Link Id="FsrW9d54nduLChqLn3qpeC" Ids="BVpfSdo48NKM9tNjwMc9Pl,JQPdpJNYZqMNmGenmrtaiD" IsHidden="true" />
+            <Pin Id="BVpfSdo48NKM9tNjwMc9Pl" Name="To Replace" Kind="InputPin" Bounds="346,602" />
+            <Pin Id="L7nWgZ3aUnANb8HPBenjjm" Name="Input" Kind="InputPin" />
+            <Pin Id="GU1O0MOorCBL5S0X4mnVyP" Name="Replacer String" Kind="InputPin" />
+            <Pin Id="DM61cOxHJvnNlGSErClhGW" Name="Output" Kind="OutputPin" />
+          </Patch>
+        </Node>
+        <!--
+
+    ************************ Replace ************************
+
+-->
+        <Node Name="Replace" Bounds="531,596,167,119" Id="BqYIldRwxaJO8OLNWqnoyc">
+          <p:NodeReference>
+            <Choice Kind="OperationDefinition" Name="Operation" />
+            <FullNameCategoryReference ID="Primitive" />
+          </p:NodeReference>
+          <p:HideCategory p:Type="Boolean">false</p:HideCategory>
+          <Patch Id="PyHP4wHN5P8MnzyqnBepX7">
+            <Node Bounds="543,669,65,26" AutoConnect="true" Id="RJKFeDQmsExP58rM47sByY">
+              <p:NodeReference LastCategoryFullName="String.Extensions.Replacer" LastSymbolSource="String.Extensions.dll">
+                <Choice Kind="OperationNode" Name="Replace" />
+                <FullNameCategoryReference ID="String.Extensions.Replacer" />
+                <PinReference Kind="InputPin" Name="Input" />
+                <PinReference Kind="InputPin" Name="Ignore Case" />
+              </p:NodeReference>
+              <Pin Id="Bd4ERiu6vatQRKShpAZUSX" Name="Input" Kind="StateInputPin" />
+              <Pin Id="NqCScmvznhPPYodixHA3DR" Name="Ignore Case" Kind="InputPin" />
+              <Pin Id="P2yXuNC9tMWLWawoyXdzAs" Name="Replacer String" Kind="InputPin" />
+              <Pin Id="JNW0BlKxsHwQSOdsFPmhfS" Name="To Replace" Kind="InputPin" />
+              <Pin Id="DhY2eHo2fSHPjjtJ6vPgYm" Name="Output" Kind="OutputPin" />
+            </Node>
+            <Node Bounds="603,631,83,26" Id="Smd5MRauRWhNXRuHzPqF6c">
+              <p:NodeReference LastCategoryFullName="Collections.Mutable.MutableArray" LastSymbolSource="VL.Collections.vl">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <Choice Kind="OperationCallFlag" Name="FromSequence" />
+                <CategoryReference Kind="ArrayType" Name="MutableArray" NeedsToBeDirectParent="true" />
+              </p:NodeReference>
+              <Pin Id="Agacv8BGXwwPqYswb2pqBg" Name="Input" Kind="StateInputPin" />
+              <Pin Id="AYJ3oDSL2jOPBucwq9U6SC" Name="Result" Kind="OutputPin" />
+            </Node>
+            <ControlPoint Id="CXpxZwoSYuSLVeKuJi5FlR" Bounds="605,614" />
+            <Link Id="TMR5XF145uMNxZyjLqoKNL" Ids="CXpxZwoSYuSLVeKuJi5FlR,Agacv8BGXwwPqYswb2pqBg" />
+            <Link Id="D57SkG2h05KPyMXmMZFOPl" Ids="B4Gnhg8n9MeQYouwmJ8IpZ,CXpxZwoSYuSLVeKuJi5FlR" IsHidden="true" />
+            <Link Id="VNppxLmv9IcO8EROIH5tWR" Ids="AYJ3oDSL2jOPBucwq9U6SC,JNW0BlKxsHwQSOdsFPmhfS" />
+            <Pin Id="B4Gnhg8n9MeQYouwmJ8IpZ" Name="To Replace" Kind="InputPin" />
+            <Pin Id="NdP2ccM455TNLsHvSw39X8" Name="Input" Kind="InputPin" />
+            <Pin Id="JxRdlwMJgniOrAZ8spMhfx" Name="Ignore Case" Kind="InputPin" />
+            <Pin Id="F9TzhlU0COeNg1CnRXrzBT" Name="Replacer String" Kind="InputPin" />
+            <Pin Id="A5Y80LqaAstLdYb8d9eOlS" Name="Output" Kind="OutputPin" />
+          </Patch>
+        </Node>
+      </Canvas>
+      <Canvas Id="Ms03poD3WC7QVMBtajVYF4" Name="Encryption" Position="120,367">
+        <!--
+
+    ************************ CreateHashSha256 ************************
+
+-->
+        <Node Name="CreateHashSha256" Bounds="85,320,161,232" Id="Bik0gfO3bfOPrrhWu8zAyC">
+          <p:NodeReference>
+            <Choice Kind="OperationDefinition" Name="Operation" />
+            <FullNameCategoryReference ID="Primitive" />
+          </p:NodeReference>
+          <p:HideCategory p:Type="Boolean">false</p:HideCategory>
+          <Patch Id="NuWtdL4w259OppGmQB7DqM">
+            <Node Bounds="108,432,126,80" Id="A6e3g77FR7PMvUOJM1pBrW">
+              <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="VL.CoreLib.dll">
+                <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
+                <Choice Kind="ApplicationStatefulRegion" Name="If" />
+                <FullNameCategoryReference ID="Primitive" />
+              </p:NodeReference>
+              <Pin Id="I0mgULITiuVLmPVc9IA90n" Name="Condition" Kind="InputPin" />
+              <Patch Id="GLwGww25xUOMnFNaHX2MNT" ManuallySortedPins="true">
+                <Patch Id="G3qx0RVRL5qPQ7vaEMOP7m" Name="Create" ManuallySortedPins="true" />
+                <Patch Id="RKtPTDmPqDZOivnvRKWGuu" Name="Then" ManuallySortedPins="true" />
+                <Node Bounds="120,465,102,19" AutoConnect="true" Id="RclbuMIG9WxM6EhcZkvBo5">
+                  <p:NodeReference LastCategoryFullName="StringExtensionLibrary.StringExtensions" LastSymbolSource="StringExtensionLibrary.dll">
+                    <Choice Kind="OperationNode" Name="CreateHashSha256" />
+                    <FullNameCategoryReference ID="StringExtensionLibrary.StringExtensions" />
+                  </p:NodeReference>
+                  <Pin Id="KacKaTyc5hGLnivWxtj0OV" Name="Val" Kind="InputPin" />
+                  <Pin Id="LXA7uAXsrnePR8dHacX7Ll" Name="Output" Kind="OutputPin" />
+                </Node>
+              </Patch>
+              <ControlPoint Id="Qdoom0so6UDLRJEbeKka5O" Bounds="122,507" Alignment="Bottom" />
+              <ControlPoint Id="D54Nbe7XV74Pu1LJ7kmdbc" Bounds="122,439" Alignment="Top" />
+            </Node>
+            <Link Id="KhIQwkkHXiuOcQNlemARaY" Ids="UvTxdifHjzlNgWTRNWy2An,KacKaTyc5hGLnivWxtj0OV" />
+            <ControlPoint Id="UvTxdifHjzlNgWTRNWy2An" Bounds="121,338" />
+            <Pin Id="JJAvAmEPL4JO85NH0fVh3d" Name="Val" Kind="InputPin" Bounds="159,339" />
+            <Link Id="BihgsNRbFXOOV97Rucocwo" Ids="JJAvAmEPL4JO85NH0fVh3d,UvTxdifHjzlNgWTRNWy2An" IsHidden="true" />
+            <Node Bounds="108,361,81,19" Id="QYOmzCfbGfUOTydYJvBr5N">
+              <p:NodeReference LastCategoryFullName="Primitive.String" LastSymbolSource="CoreLibBasics.vl">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <Choice Kind="OperationCallFlag" Name="IsNullOrEmpty" />
+              </p:NodeReference>
+              <Pin Id="CbdbvoxKREKO5LT9jNMWsm" Name="Input" Kind="StateInputPin" />
+              <Pin Id="IU219zIaqGiQYkInHWaZSR" Name="Result" Kind="OutputPin" />
+            </Node>
+            <Link Id="OGSV4VZineBOQ1DKIZ4MFU" Ids="UvTxdifHjzlNgWTRNWy2An,CbdbvoxKREKO5LT9jNMWsm" />
+            <Node Bounds="108,392,37,19" Id="DywMfMmBrpQMQt1bYwQZPl">
+              <p:NodeReference LastCategoryFullName="Primitive.Boolean" LastSymbolSource="CoreLibBasics.vl">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <Choice Kind="OperationCallFlag" Name="NOT" />
+              </p:NodeReference>
+              <Pin Id="CULFqxZdVJ4LgQU6SQTa9K" Name="Input" Kind="StateInputPin" />
+              <Pin Id="CYSGX3ReX9jL8b15YG98FH" Name="Output" Kind="StateOutputPin" />
+            </Node>
+            <Link Id="SZziVG1Hh2RMJPbBl7oCSI" Ids="IU219zIaqGiQYkInHWaZSR,CULFqxZdVJ4LgQU6SQTa9K" />
+            <Link Id="MSuRdVc7IdSPvRoV4VER4o" Ids="CYSGX3ReX9jL8b15YG98FH,I0mgULITiuVLmPVc9IA90n" />
+            <Link Id="Ukph3l5sx4eNOcRFGcNvuG" Ids="D54Nbe7XV74Pu1LJ7kmdbc,Qdoom0so6UDLRJEbeKka5O" IsFeedback="true" />
+            <Link Id="ST7uFEQzLpLNXdlrMdhb9Y" Ids="LXA7uAXsrnePR8dHacX7Ll,Qdoom0so6UDLRJEbeKka5O" />
+            <Link Id="M33Zmg7QewCNZTCV6Adssh" Ids="Qdoom0so6UDLRJEbeKka5O,DH0qf3R5LQUOmYubv515rO" />
+            <ControlPoint Id="DH0qf3R5LQUOmYubv515rO" Bounds="122,535" />
+            <Pin Id="G91Y6HhkJOtNHb2Ptccj1j" Name="Output" Kind="OutputPin" Bounds="129,485" />
+            <Link Id="GUmUqBqyAsrLbmCLB1wTIc" Ids="DH0qf3R5LQUOmYubv515rO,G91Y6HhkJOtNHb2Ptccj1j" IsHidden="true" />
+          </Patch>
+        </Node>
+        <!--
+
+    ************************ CreateHashSha512 ************************
+
+-->
+        <Node Name="CreateHashSha512" Bounds="373,321,161,223" Id="Gu407YsYEGAL8HqdhLMwBH">
+          <p:NodeReference>
+            <Choice Kind="OperationDefinition" Name="Operation" />
+            <FullNameCategoryReference ID="Primitive" />
+          </p:NodeReference>
+          <p:HideCategory p:Type="Boolean">false</p:HideCategory>
+          <Patch Id="G35WAbHVvRFMQp8PzaeXoi">
+            <Pin Id="KBFAZYc8dPYL8pyOzynmRh" Name="Val" Kind="InputPin" />
+            <ControlPoint Id="D09P9yuSrgFMMWIALkTUbx" Bounds="409,339" />
+            <Node Bounds="396,362,81,19" Id="IKFXISOqpgNM6XFUkxn928">
+              <p:NodeReference LastCategoryFullName="Primitive.String" LastSymbolSource="CoreLibBasics.vl">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <Choice Kind="OperationCallFlag" Name="IsNullOrEmpty" />
+              </p:NodeReference>
+              <Pin Id="Q2q9kRzRPQgOdLwwcwi3Ra" Name="Input" Kind="StateInputPin" />
+              <Pin Id="Ar4hanG7K3hORZ0kRGaSVF" Name="Result" Kind="OutputPin" />
+            </Node>
+            <Node Bounds="396,393,37,19" Id="Cp3I1nRS6vdQVNG3rKLJ2l">
+              <p:NodeReference LastCategoryFullName="Primitive.Boolean" LastSymbolSource="CoreLibBasics.vl">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <Choice Kind="OperationCallFlag" Name="NOT" />
+              </p:NodeReference>
+              <Pin Id="RJLr2iUUN8sQKRBC0fWqcu" Name="Input" Kind="StateInputPin" />
+              <Pin Id="LpfwWo6x205LtbxXYYFeKm" Name="Output" Kind="StateOutputPin" />
+            </Node>
+            <Link Id="Qu7d5PXD5uJPLxr3maGQh8" Ids="KBFAZYc8dPYL8pyOzynmRh,D09P9yuSrgFMMWIALkTUbx" IsHidden="true" />
+            <Link Id="FpdNWnRalyzP4LejCKQrke" Ids="D09P9yuSrgFMMWIALkTUbx,Q2q9kRzRPQgOdLwwcwi3Ra" />
+            <Link Id="OFP275b9JTaMe3Ap7yDYR4" Ids="Ar4hanG7K3hORZ0kRGaSVF,RJLr2iUUN8sQKRBC0fWqcu" />
+            <Node Bounds="396,424,126,82" Id="Mzn5VNV5jZHPVwOpRwKlQ5">
+              <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="VL.CoreLib.dll">
+                <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
+                <Choice Kind="ApplicationStatefulRegion" Name="If" />
+                <FullNameCategoryReference ID="Primitive" />
+              </p:NodeReference>
+              <Pin Id="GR3nD85OqsYNexJ4SUwDJB" Name="Condition" Kind="InputPin" />
+              <Patch Id="R4mKEyOrYr2OJzly3jRuYx" ManuallySortedPins="true">
+                <Patch Id="Ams5pR5vBnWQPzl5bsKVol" Name="Create" ManuallySortedPins="true" />
+                <Patch Id="VT6H2bpZYe5M97vdfOmLGX" Name="Then" ManuallySortedPins="true" />
+                <Node Bounds="408,455,102,19" AutoConnect="true" Id="PR5aLBZysIAQVW8z79sW4k">
+                  <p:NodeReference LastCategoryFullName="StringExtensionLibrary.StringExtensions" LastSymbolSource="StringExtensionLibrary.dll">
+                    <Choice Kind="OperationNode" Name="CreateHashSha512" />
+                    <FullNameCategoryReference ID="StringExtensionLibrary.StringExtensions" />
+                  </p:NodeReference>
+                  <Pin Id="JwFpwmfh9wLLn0c1X3dafe" Name="Val" Kind="InputPin" />
+                  <Pin Id="Lu43BywOE6jLiA9mtVwYn8" Name="Output" Kind="OutputPin" />
+                </Node>
+              </Patch>
+              <ControlPoint Id="BpdZec73WKEL3u5mKTSBo6" Bounds="410,499" Alignment="Bottom" />
+              <ControlPoint Id="LWndIpfaay8OqN0Juvodre" Bounds="424,430" Alignment="Top" />
+            </Node>
+            <Link Id="Cbxwhtb7hmTLd9z5ioIhVE" Ids="LpfwWo6x205LtbxXYYFeKm,GR3nD85OqsYNexJ4SUwDJB" />
+            <Link Id="EEnj73wZQKHMuWyB7fLyE4" Ids="D09P9yuSrgFMMWIALkTUbx,JwFpwmfh9wLLn0c1X3dafe" />
+            <Link Id="RItZ3EXNcIdPjbEQc77v0Z" Ids="LWndIpfaay8OqN0Juvodre,BpdZec73WKEL3u5mKTSBo6" IsFeedback="true" />
+            <Link Id="JBMdQHOFaa8OhxhIJORvik" Ids="Lu43BywOE6jLiA9mtVwYn8,BpdZec73WKEL3u5mKTSBo6" />
+            <Link Id="AAmavoVTvEYN7EaMyltEMU" Ids="BpdZec73WKEL3u5mKTSBo6,GvIMU4QGGq7PuvBkYQz6od" />
+            <ControlPoint Id="GvIMU4QGGq7PuvBkYQz6od" Bounds="410,527" />
+            <Pin Id="KiEXaiBi0oDPkK36476slF" Name="Output" Kind="OutputPin" Bounds="420,526" />
+            <Link Id="RAVRjxi58DfOcgE68PvTgu" Ids="GvIMU4QGGq7PuvBkYQz6od,KiEXaiBi0oDPkK36476slF" IsHidden="true" />
+          </Patch>
+        </Node>
+        <!--
+
+    ************************ Decrypt ************************
+
+-->
+        <Node Name="Decrypt" Bounds="372,53,148,208" Id="QtQLlBvFg7aP5UcQJqv1ZN">
+          <p:NodeReference>
+            <Choice Kind="OperationDefinition" Name="Operation" />
+            <FullNameCategoryReference ID="Primitive" />
+          </p:NodeReference>
+          <p:HideCategory p:Type="Boolean">false</p:HideCategory>
+          <Patch Id="CyFX6cwUUAYMVDXdnM1V3R">
+            <Node Bounds="395,144,100,80" Id="HQG3XIoJUSmMuKFah71JkF">
+              <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="VL.CoreLib.dll">
+                <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
+                <Choice Kind="ApplicationStatefulRegion" Name="If" />
+                <FullNameCategoryReference ID="Primitive" />
+              </p:NodeReference>
+              <Pin Id="JtV7xLsJukALtnSDZQFNpl" Name="Condition" Kind="InputPin" />
+              <Patch Id="VldJiN2IN38QTJOBrhiXP8" ManuallySortedPins="true">
+                <Patch Id="Lgpoee87R3EP9EBy4ClXHR" Name="Create" ManuallySortedPins="true" />
+                <Patch Id="GQ2Zq3P4izVPkOg0TKbfys" Name="Then" ManuallySortedPins="true" />
+                <Node Bounds="407,174,76,26" AutoConnect="true" Id="MmP1bFaWx9xN8DuietRcFb">
+                  <p:NodeReference LastCategoryFullName="StringExtensionLibrary.StringExtensions" LastSymbolSource="StringExtensionLibrary.dll">
+                    <Choice Kind="OperationNode" Name="Decrypt" />
+                    <FullNameCategoryReference ID="StringExtensionLibrary.StringExtensions" />
+                  </p:NodeReference>
+                  <Pin Id="EEhF1SIsIjMMw9FCX4gMkH" Name="Input" Kind="StateInputPin" />
+                  <Pin Id="Ky8X5vhemfrOkNp5mvA6kg" Name="Key" Kind="InputPin" />
+                  <Pin Id="A8hyuVyTvVRLdCJIaENPgV" Name="Output" Kind="OutputPin" />
+                </Node>
+              </Patch>
+              <ControlPoint Id="ObhpZRig7jgLDJi0WeoPKu" Bounds="409,219" Alignment="Bottom" />
+              <ControlPoint Id="PHpCSN7qIs7LU2A3CJoNkr" Bounds="409,151" Alignment="Top" />
+            </Node>
+            <Link Id="URUshefKjGuPir49v32tGR" Ids="NnFP95kmBvqPpboF3kpMdP,EEhF1SIsIjMMw9FCX4gMkH" />
+            <ControlPoint Id="NnFP95kmBvqPpboF3kpMdP" Bounds="409,71" />
+            <Pin Id="EARS6oQIWXgQCSaMJCa3fy" Name="Input" Kind="InputPin" Bounds="422,160" />
+            <Link Id="REOky9qVLRqLNrPV0V55v2" Ids="EARS6oQIWXgQCSaMJCa3fy,NnFP95kmBvqPpboF3kpMdP" IsHidden="true" />
+            <Node Bounds="395,87,81,19" Id="NhnGTYjT517O4vUnfldwQE">
+              <p:NodeReference LastCategoryFullName="Primitive.String" LastSymbolSource="CoreLibBasics.vl">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <Choice Kind="OperationCallFlag" Name="IsNullOrEmpty" />
+              </p:NodeReference>
+              <Pin Id="HKdVOEEz7FBLy5aazu3YJb" Name="Input" Kind="StateInputPin" />
+              <Pin Id="FB3bJrlUl0PM1sLwPqvtBu" Name="Result" Kind="OutputPin" />
+            </Node>
+            <Link Id="IUpNEvlRF9FPUlEkGgBi95" Ids="NnFP95kmBvqPpboF3kpMdP,HKdVOEEz7FBLy5aazu3YJb" />
+            <Node Bounds="395,113,37,19" Id="BNgQW07bGuuNwMWF8BYNr7">
+              <p:NodeReference LastCategoryFullName="Primitive.Boolean" LastSymbolSource="CoreLibBasics.vl">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <Choice Kind="OperationCallFlag" Name="NOT" />
+              </p:NodeReference>
+              <Pin Id="Ibo9O9UqraCP3kkNCDSTX1" Name="Input" Kind="StateInputPin" />
+              <Pin Id="MSwXX5i6t2LNqyWesZqk42" Name="Output" Kind="StateOutputPin" />
+            </Node>
+            <Link Id="FZWCPYSSVLBMbvtFBlbzP7" Ids="FB3bJrlUl0PM1sLwPqvtBu,Ibo9O9UqraCP3kkNCDSTX1" />
+            <Link Id="JwUO1P27EyxPyHE1gSXyy5" Ids="MSwXX5i6t2LNqyWesZqk42,JtV7xLsJukALtnSDZQFNpl" />
+            <Link Id="JyTJyyFBQxdOheJsickixh" Ids="RLo7it3w8IVPZsTPxg3ciC,Ky8X5vhemfrOkNp5mvA6kg" />
+            <ControlPoint Id="RLo7it3w8IVPZsTPxg3ciC" Bounds="480,128" />
+            <Pin Id="LNuBbv5hc1YLJvyz917Qxz" Name="Key" Kind="InputPin" Bounds="448,155" />
+            <Link Id="Duo8RQ46Z1cPq2iu70y0pd" Ids="LNuBbv5hc1YLJvyz917Qxz,RLo7it3w8IVPZsTPxg3ciC" IsHidden="true" />
+            <Link Id="NZITpUW6kUIN05z0vjGY5H" Ids="PHpCSN7qIs7LU2A3CJoNkr,ObhpZRig7jgLDJi0WeoPKu" IsFeedback="true" />
+            <Link Id="OYt066BxTRWOGy9bsnTmQo" Ids="A8hyuVyTvVRLdCJIaENPgV,ObhpZRig7jgLDJi0WeoPKu" />
+            <Link Id="AmQQtT6Mv7eLOl1jH0SsLh" Ids="ObhpZRig7jgLDJi0WeoPKu,UKW1M9gZVkeOrXCLHjjPBJ" />
+            <ControlPoint Id="UKW1M9gZVkeOrXCLHjjPBJ" Bounds="409,244" />
+            <Pin Id="CfNHXY4dIqfQcF0ePDKbLV" Name="Output" Kind="OutputPin" Bounds="383,259" />
+            <Link Id="BNsb6VJdkLEMksJn83O5GP" Ids="UKW1M9gZVkeOrXCLHjjPBJ,CfNHXY4dIqfQcF0ePDKbLV" IsHidden="true" />
+          </Patch>
+        </Node>
+        <!--
+
+    ************************ Encrypt ************************
+
+-->
+        <Node Name="Encrypt" Bounds="74,36,148,213" Id="QrjM9j7IU4WMcJdV66n1Ke">
+          <p:NodeReference>
+            <Choice Kind="OperationDefinition" Name="Operation" />
+            <FullNameCategoryReference ID="Primitive" />
+          </p:NodeReference>
+          <p:HideCategory p:Type="Boolean">false</p:HideCategory>
+          <Patch Id="AqhB2raWD0SMk3liI1ONPp">
+            <Node Bounds="109,152,76,29" Id="Cq41N3gxDMDL4CVmoIePpx">
+              <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="VL.CoreLib.dll">
+                <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
+                <Choice Kind="ApplicationStatefulRegion" Name="If" />
+                <FullNameCategoryReference ID="Primitive" />
+              </p:NodeReference>
+              <Pin Id="ParbAzvCEZiQavXajmErLb" Name="Condition" Kind="InputPin" />
+              <Patch Id="ArSiJF2PzYfNstjbUj261B" ManuallySortedPins="true">
+                <Patch Id="MCPXN8bWXn2P1KQ3btJRe2" Name="Create" ManuallySortedPins="true" />
+                <Patch Id="PNUvRQBQ6ZFL5Qw9lrvrtP" Name="Then" ManuallySortedPins="true" />
+                <Node Bounds="109,155,76,26" AutoConnect="true" Id="CCUZjk82Xt0OWlkwYd0fX3">
+                  <p:NodeReference LastCategoryFullName="StringExtensionLibrary.StringExtensions" LastSymbolSource="StringExtensionLibrary.dll">
+                    <Choice Kind="OperationNode" Name="Encrypt" />
+                    <FullNameCategoryReference ID="StringExtensionLibrary.StringExtensions" />
+                  </p:NodeReference>
+                  <Pin Id="VxW2F02gfwKOuBrSQ79tsX" Name="Input" Kind="StateInputPin" />
+                  <Pin Id="CyMwrd8sUB5M7kVl3aJ2YI" Name="Key" Kind="InputPin" />
+                  <Pin Id="A6FarohnUFiL3p5tMXhTjS" Name="Output" Kind="OutputPin" />
+                </Node>
+              </Patch>
+              <ControlPoint Id="I8apjGu5tEJO0VofwsSMIH" Bounds="111,200" Alignment="Bottom" />
+              <ControlPoint Id="QUIRzxrx2EyOhjYUtat2Ag" Bounds="111,132" Alignment="Top" />
+            </Node>
+            <Link Id="N2E8ovQBCVVMQuaLjAH2wA" Ids="IO5LpXS3cz0LlfUwuHRRSC,VxW2F02gfwKOuBrSQ79tsX" />
+            <ControlPoint Id="IO5LpXS3cz0LlfUwuHRRSC" Bounds="111,54" />
+            <Pin Id="N0ns0FjNX0yNeC5Fhw3Tv2" Name="Input" Kind="InputPin" Bounds="161,118" />
+            <Link Id="NqEXwNOTV9MQd0docSdrVM" Ids="N0ns0FjNX0yNeC5Fhw3Tv2,IO5LpXS3cz0LlfUwuHRRSC" IsHidden="true" />
+            <Link Id="PpCy1qM4lwPMNOeYLAmDhH" Ids="IcNNmezRjDfPGGJ35a4XMH,CyMwrd8sUB5M7kVl3aJ2YI" />
+            <ControlPoint Id="IcNNmezRjDfPGGJ35a4XMH" Bounds="182,101" />
+            <Pin Id="Sigc8GMBrjqLZYbfkd5yAH" Name="Key" Kind="InputPin" Bounds="181,97" />
+            <Link Id="RHXoxhLGOF5MNE5VqifgNI" Ids="Sigc8GMBrjqLZYbfkd5yAH,IcNNmezRjDfPGGJ35a4XMH" IsHidden="true" />
+            <Node Bounds="97,69,81,19" Id="UJgnSUeKIAfNHl4VIvtAb1">
+              <p:NodeReference LastCategoryFullName="Primitive.String" LastSymbolSource="CoreLibBasics.vl">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <Choice Kind="OperationCallFlag" Name="IsNullOrEmpty" />
+              </p:NodeReference>
+              <Pin Id="KGsb5RvveC3LpNYjCeiKPQ" Name="Input" Kind="StateInputPin" />
+              <Pin Id="RszyES5AQ0gMRF3mwEg4pj" Name="Result" Kind="OutputPin" />
+            </Node>
+            <Link Id="DKB7XMCIqIILnr3ojDPRSh" Ids="IO5LpXS3cz0LlfUwuHRRSC,KGsb5RvveC3LpNYjCeiKPQ" />
+            <Node Bounds="97,96,37,19" Id="PKvAeu2DjXeNwBlZGDNdgs">
+              <p:NodeReference LastCategoryFullName="Primitive.Boolean" LastSymbolSource="CoreLibBasics.vl">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <Choice Kind="OperationCallFlag" Name="NOT" />
+              </p:NodeReference>
+              <Pin Id="UKtqrk8qURsOPu33EeZhMT" Name="Input" Kind="StateInputPin" />
+              <Pin Id="Hz3vv8ckei3OmCTEv3tTgd" Name="Output" Kind="StateOutputPin" />
+            </Node>
+            <Link Id="P22WtX0S720OR5CXktC4Kr" Ids="RszyES5AQ0gMRF3mwEg4pj,UKtqrk8qURsOPu33EeZhMT" />
+            <Link Id="QLskl6iApnRLpN3mUKFM6R" Ids="Hz3vv8ckei3OmCTEv3tTgd,ParbAzvCEZiQavXajmErLb" />
+            <Link Id="VW1V1rNSALCPd1t3027czO" Ids="QUIRzxrx2EyOhjYUtat2Ag,I8apjGu5tEJO0VofwsSMIH" IsFeedback="true" />
+            <Link Id="AcZ1RJi2KIbNquRWWyiMFd" Ids="A6FarohnUFiL3p5tMXhTjS,I8apjGu5tEJO0VofwsSMIH" />
+            <Link Id="VQNUc3afBOdK9WXrTSr7eA" Ids="I8apjGu5tEJO0VofwsSMIH,TUtcokw91koQLnAsqg8yL6" />
+            <ControlPoint Id="TUtcokw91koQLnAsqg8yL6" Bounds="111,232" />
+            <Pin Id="NoEfV2OxNkHQPGnBo9L54J" Name="Output" Kind="OutputPin" Bounds="108,231" />
+            <Link Id="RykQUB76LidOWCzUSPi8v0" Ids="TUtcokw91koQLnAsqg8yL6,NoEfV2OxNkHQPGnBo9L54J" IsHidden="true" />
+          </Patch>
+        </Node>
+      </Canvas>
+      <Canvas Id="ESDtPuMuCeqNOJmugtIufD" Name="Fallback" Position="120,432">
+        <!--
+
+    ************************ GetDefaultIfEmpty ************************
+
+-->
+        <Node Name="GetDefaultIfEmpty" Bounds="126,203,112,80" Id="Hr4186fV5khOictWNodgmx">
+          <p:NodeReference>
+            <Choice Kind="OperationDefinition" Name="Operation" />
+            <FullNameCategoryReference ID="Primitive" />
+          </p:NodeReference>
+          <p:HideCategory p:Type="Boolean">false</p:HideCategory>
+          <Patch Id="Tyl2sXQXHDJOqfvznj1jdu">
+            <Node Bounds="138,231,76,26" AutoConnect="true" Id="UyP0pxsvRvyPkgYNQghUwG">
+              <p:NodeReference LastCategoryFullName="StringExtensionLibrary.StringExtensions" LastSymbolSource="StringExtensionLibrary.dll">
+                <Choice Kind="OperationNode" Name="GetDefaultIfEmpty" />
+                <FullNameCategoryReference ID="StringExtensionLibrary.StringExtensions" />
+              </p:NodeReference>
+              <Pin Id="SKM4fAQJVSfPoU3EP16G60" Name="Input" Kind="StateInputPin" />
+              <Pin Id="PEHew376Ug0MFydZkJgJV3" Name="Default Value" Kind="InputPin" />
+              <Pin Id="PxatKTaPPZ2OazUrEe60u2" Name="Output" Kind="OutputPin" />
+            </Node>
+            <Pin Id="MmvdXhhSPWZOLqqJgpPjnF" Name="Input" Kind="InputPin" />
+            <Pin Id="M4Ijt1fid07NX5d8dQyt1O" Name="Default Value" Kind="InputPin" />
+            <Pin Id="J48eCAPPvCaNmfJyWJ3dvd" Name="Output" Kind="OutputPin" />
+          </Patch>
+        </Node>
+        <!--
+
+    ************************ GetEmptyStringIfNull ************************
+
+-->
+        <Node Name="GetEmptyStringIfNull" Bounds="406,203,112,80" Id="PsIqeKAKZIIM7YsoYR1AzB">
+          <p:NodeReference>
+            <Choice Kind="OperationDefinition" Name="Operation" />
+            <FullNameCategoryReference ID="Primitive" />
+          </p:NodeReference>
+          <p:HideCategory p:Type="Boolean">false</p:HideCategory>
+          <Patch Id="IFwD1nD7yNkQFy6VPdf706">
+            <Node Bounds="418,231,76,26" AutoConnect="true" Id="SV91M95gNbdLkIaaU1hoqr">
+              <p:NodeReference LastCategoryFullName="StringExtensionLibrary.StringExtensions" LastSymbolSource="StringExtensionLibrary.dll">
+                <Choice Kind="OperationNode" Name="GetEmptyStringIfNull" />
+                <FullNameCategoryReference ID="StringExtensionLibrary.StringExtensions" />
+              </p:NodeReference>
+              <Pin Id="QPZLp8YZlkGNBKOOrtxqwv" Name="Input" Kind="StateInputPin" />
+              <Pin Id="HxGgFZ6MYraOXcUSlfKXb0" Name="Output" Kind="OutputPin" />
+            </Node>
+            <Pin Id="MtWaVC6roeZPqGXNwaSvpo" Name="Input" Kind="InputPin" />
+            <Pin Id="CrKK9oibQKMN3raFiLsP5M" Name="Output" Kind="OutputPin" />
+          </Patch>
+        </Node>
+        <!--
+
+    ************************ GetNullIfEmptyString ************************
+
+-->
+        <Node Name="GetNullIfEmptyString" Bounds="686,203,112,80" Id="SNkS2RhW8fXPswb6weN61r">
+          <p:NodeReference>
+            <Choice Kind="OperationDefinition" Name="Operation" />
+            <FullNameCategoryReference ID="Primitive" />
+          </p:NodeReference>
+          <p:HideCategory p:Type="Boolean">false</p:HideCategory>
+          <Patch Id="OKXzEG75kUyNt244eOVAcn">
+            <Node Bounds="698,231,76,26" AutoConnect="true" Id="NYhqbKhYJFhLxxgbpRHEwl">
+              <p:NodeReference LastCategoryFullName="StringExtensionLibrary.StringExtensions" LastSymbolSource="StringExtensionLibrary.dll">
+                <Choice Kind="OperationNode" Name="GetNullIfEmptyString" />
+                <FullNameCategoryReference ID="StringExtensionLibrary.StringExtensions" />
+              </p:NodeReference>
+              <Pin Id="Qke5b1YYWnjL0d7UQqyiOD" Name="Input" Kind="StateInputPin" />
+              <Pin Id="Ot1q5V8IIlKOh6UAzy4fbs" Name="Output" Kind="OutputPin" />
+            </Node>
+            <Pin Id="Qt4LWXuIH7lO1aTUrQ57vC" Name="Input" Kind="InputPin" />
+            <Pin Id="OLngeJ2VpzwOjuemiKoTg8" Name="Output" Kind="OutputPin" />
+          </Patch>
+        </Node>
+      </Canvas>
+      <Canvas Id="A6pIPeRpqwwQUseCucZWlf" Name="Information" Position="120,497">
+        <!--
+
+    ************************ GetByteSize ************************
+
+-->
+        <Node Name="GetByteSize" Bounds="453,243,173,217" Id="Tt43yvD1bRTPqUNL5dmlgu">
+          <p:NodeReference>
+            <Choice Kind="OperationDefinition" Name="Operation" />
+            <FullNameCategoryReference ID="Primitive" />
+          </p:NodeReference>
+          <p:HideCategory p:Type="Boolean">false</p:HideCategory>
+          <Patch Id="G17TWG9lJ60MSNAsHDl7Cr">
+            <Node Bounds="488,364,76,29" Id="LLTx6uW9DOfLW6jsUGde8K">
+              <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="VL.CoreLib.dll">
+                <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
+                <Choice Kind="ApplicationStatefulRegion" Name="If" />
+                <FullNameCategoryReference ID="Primitive" />
+              </p:NodeReference>
+              <Pin Id="Uzy2R9e2ukNQIaXtGdP4nd" Name="Condition" Kind="InputPin" />
+              <Patch Id="CptmIOgvLaML4ecWyTUuvy" ManuallySortedPins="true">
+                <Patch Id="OoGlsyiG9AlQcF7z9jPpkV" Name="Create" ManuallySortedPins="true" />
+                <Patch Id="RCkUSKj5LOQOKwWeioeTv7" Name="Then" ManuallySortedPins="true" />
+                <Node Bounds="488,367,76,26" AutoConnect="true" Id="MOC7TQYhtHxPo2O20eHYNo">
+                  <p:NodeReference LastCategoryFullName="StringExtensionLibrary.StringExtensions" LastSymbolSource="StringExtensionLibrary.dll">
+                    <Choice Kind="OperationNode" Name="GetByteSize" />
+                    <FullNameCategoryReference ID="StringExtensionLibrary.StringExtensions" />
+                  </p:NodeReference>
+                  <Pin Id="Dp1HI2T5dXdP90GCX7gkLL" Name="Input" Kind="StateInputPin" />
+                  <Pin Id="UZktvWFjI3cMajxC0sMEpO" Name="Encoding" Kind="InputPin" />
+                  <Pin Id="FTZLcumd4dlL5hpYgbGVxm" Name="Result" Kind="OutputPin" />
+                </Node>
+              </Patch>
+              <ControlPoint Id="KcBJN4BrMTBMzLeCPOyFtO" Bounds="490,412" Alignment="Bottom" />
+              <ControlPoint Id="IULrviMhGrMQRxYisYFeXI" Bounds="490,344" Alignment="Top" />
+            </Node>
+            <Link Id="B8mjUE6isxmNNMvHOWmPhs" Ids="Gf4bWp7dZNZPw0R46pkcmV,Dp1HI2T5dXdP90GCX7gkLL" />
+            <ControlPoint Id="Gf4bWp7dZNZPw0R46pkcmV" Bounds="490,261" />
+            <Pin Id="TDQLYHLRz4qOherOjnwzqb" Name="Input" Kind="InputPin" Bounds="528,329" />
+            <Link Id="MYjUBP4VtFgLI7cRMfJHY2" Ids="TDQLYHLRz4qOherOjnwzqb,Gf4bWp7dZNZPw0R46pkcmV" IsHidden="true" />
+            <Node Bounds="476,281,81,19" Id="CXIx29cXG01PZ9Voz1I3uq">
+              <p:NodeReference LastCategoryFullName="Primitive.String" LastSymbolSource="CoreLibBasics.vl">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <Choice Kind="OperationCallFlag" Name="IsNullOrEmpty" />
+              </p:NodeReference>
+              <Pin Id="H0hXWyUddkFPfdkPHULVRP" Name="Input" Kind="StateInputPin" />
+              <Pin Id="Af7QGJ7rrUMMgRpZ2fTgiA" Name="Result" Kind="OutputPin" />
+            </Node>
+            <Link Id="Slg5xWygNMMNZ0aw4RBdff" Ids="Gf4bWp7dZNZPw0R46pkcmV,H0hXWyUddkFPfdkPHULVRP" />
+            <Node Bounds="476,310,37,19" Id="BnOG4kGS611NxwvIovp3Ng">
+              <p:NodeReference LastCategoryFullName="Primitive.Boolean" LastSymbolSource="CoreLibBasics.vl">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <Choice Kind="OperationCallFlag" Name="NOT" />
+              </p:NodeReference>
+              <Pin Id="O0PTV5HNGnYM6BlzfEUGsF" Name="Input" Kind="StateInputPin" />
+              <Pin Id="TSKk2kPQnBEO9WhIhBg0m1" Name="Output" Kind="StateOutputPin" />
+            </Node>
+            <Link Id="HTPKfOapoV8LMb4CoHwqvy" Ids="Af7QGJ7rrUMMgRpZ2fTgiA,O0PTV5HNGnYM6BlzfEUGsF" />
+            <Link Id="NRxhjzXspj9OLjl7mFYU3j" Ids="TSKk2kPQnBEO9WhIhBg0m1,Uzy2R9e2ukNQIaXtGdP4nd" />
+            <Link Id="O2Xw61nFsF4Nb0zXo2Cskx" Ids="IULrviMhGrMQRxYisYFeXI,KcBJN4BrMTBMzLeCPOyFtO" IsFeedback="true" />
+            <Link Id="A3VSaDFzjxMNKD5GG1E0E4" Ids="FTZLcumd4dlL5hpYgbGVxm,KcBJN4BrMTBMzLeCPOyFtO" />
+            <Link Id="QGkMg3LZcsiLhpIxNG45Gc" Ids="KcBJN4BrMTBMzLeCPOyFtO,NGH1YiAVDbbL40dPaLTZqP" />
+            <ControlPoint Id="NGH1YiAVDbbL40dPaLTZqP" Bounds="490,443" />
+            <Pin Id="Ii3RNMHLTK4QSHvYJ6cjLG" Name="Output" Kind="OutputPin" Bounds="485,452" />
+            <Link Id="FcYhGNlmS72NkZ1JjoShwf" Ids="NGH1YiAVDbbL40dPaLTZqP,Ii3RNMHLTK4QSHvYJ6cjLG" IsHidden="true" />
+            <Link Id="KN4R8019YzeP83K9iMPgUz" Ids="TOkc5uEz3ykQS8R18SDHKG,UZktvWFjI3cMajxC0sMEpO" />
+            <ControlPoint Id="TOkc5uEz3ykQS8R18SDHKG" Bounds="561,316" />
+            <Pin Id="RlaocXMf5GHNGQc3135fPm" Name="Encoding" Kind="InputPin" Bounds="569,305" />
+            <Link Id="G5zPfljOUz3PdXJrtV8uim" Ids="RlaocXMf5GHNGQc3135fPm,TOkc5uEz3ykQS8R18SDHKG" IsHidden="true" />
+          </Patch>
+        </Node>
+        <!--
+
+    ************************ CountOccurrences ************************
+
+-->
+        <Node Name="CountOccurrences" Bounds="300,342,124,80" Id="Fd8JTFFAqXaQS51VNoat9H">
+          <p:NodeReference>
+            <Choice Kind="OperationDefinition" Name="Operation" />
+            <FullNameCategoryReference ID="Primitive" />
+          </p:NodeReference>
+          <p:HideCategory p:Type="Boolean">false</p:HideCategory>
+          <Patch Id="TdZWRAoeukPMURt4GRnBeE">
+            <Node Bounds="312,371,100,26" AutoConnect="true" Id="SIx1qGbPdR7LzsRdxKYE5z">
+              <p:NodeReference LastCategoryFullName="StringExtensionLibrary.StringExtensions" LastSymbolSource="StringExtensionLibrary.dll">
+                <Choice Kind="OperationNode" Name="CountOccurrences" />
+                <FullNameCategoryReference ID="StringExtensionLibrary.StringExtensions" />
+              </p:NodeReference>
+              <Pin Id="IbVuggHfjZuL5CtLLLz2JG" Name="Input" Kind="StateInputPin" />
+              <Pin Id="KYxTLTzFP2WLvrHt2UCNDC" Name="String To Match" Kind="InputPin" />
+              <Pin Id="E0rqelCMkAfOshjMyXK5OO" Name="Result" Kind="OutputPin" />
+            </Node>
+            <Pin Id="SNt57LiSdmwNaXcZW3eUdc" Name="Input" Kind="InputPin" />
+            <Pin Id="Egvr00yL1sDNJTY63shB3T" Name="String To Match" Kind="InputPin" />
+            <Pin Id="GHUAquDThSWPyF5pR5uv29" Name="Result" Kind="OutputPin" />
+          </Patch>
+        </Node>
+      </Canvas>
+      <Canvas Id="SvykPIYwgpZP3DTDl4IzGz" Name="Experimental.DataStructure" Position="120,562">
+        <!--
+
+    ************************ ParseStringToCsv ************************
+
+-->
+        <Node Name="ParseStringToCsv" Bounds="54,94,119,80" Id="CAKmMxvJOCGPfGXWXcOSRu">
+          <p:NodeReference>
+            <Choice Kind="OperationDefinition" Name="Operation" />
+            <FullNameCategoryReference ID="Primitive" />
+          </p:NodeReference>
+          <p:HideCategory p:Type="Boolean">false</p:HideCategory>
+          <Patch Id="PXyF1ymlMquOqay8UoFkiC">
+            <Node Bounds="66,123,95,26" AutoConnect="true" Id="J0YFiDteRGQPWNfPuW4Ibk">
+              <p:NodeReference LastCategoryFullName="StringExtensionLibrary.StringExtensions" LastSymbolSource="StringExtensionLibrary.dll">
+                <Choice Kind="OperationNode" Name="ParseStringToCsv" />
+                <FullNameCategoryReference ID="StringExtensionLibrary.StringExtensions" />
+              </p:NodeReference>
+              <Pin Id="MUGOPZp0shFOrXVdrBtYx4" Name="Input" Kind="StateInputPin" />
+              <Pin Id="BgtrH1FkFipMTjITySJWva" Name="Output" Kind="OutputPin" />
+            </Node>
+            <Pin Id="EDhdX9q4cN4M5WxzMGDAfY" Name="Input" Kind="InputPin" />
+            <Pin Id="RT8dTTZI72ePra8F587FVw" Name="Output" Kind="OutputPin" />
+          </Patch>
+        </Node>
+        <!--
+
+    ************************ QueryStringToDictionary ************************
+
+-->
+        <Node Name="QueryStringToDictionary" Bounds="223,93,152,80" Id="BYhxFB5JCiaLsQiyJRuH8S">
+          <p:NodeReference>
+            <Choice Kind="OperationDefinition" Name="Operation" />
+            <FullNameCategoryReference ID="Primitive" />
+          </p:NodeReference>
+          <p:HideCategory p:Type="Boolean">false</p:HideCategory>
+          <Patch Id="THc0bXJo0Z1PbOYdWknfQV">
+            <Node Bounds="235,122,128,26" AutoConnect="true" Id="Ia2JCrjML8mPR0txhYlm4D">
+              <p:NodeReference LastCategoryFullName="StringExtensionLibrary.StringExtensions" LastSymbolSource="StringExtensionLibrary.dll">
+                <Choice Kind="OperationNode" Name="QueryStringToDictionary" />
+                <FullNameCategoryReference ID="StringExtensionLibrary.StringExtensions" />
+              </p:NodeReference>
+              <Pin Id="PNGEtv5gMt7Ov40cngVV7X" Name="Input" Kind="StateInputPin" />
+              <Pin Id="JwOVdimPQjnLsZQ9Pm5OfX" Name="Result" Kind="OutputPin" />
+            </Node>
+            <Pin Id="EtsLpMYC0gEMCpGDNX8C7i" Name="Input" Kind="InputPin" />
+            <Pin Id="T4M7jWwbRaJNTDqnkZlf7l" Name="Result" Kind="OutputPin" />
+          </Patch>
+        </Node>
+        <!--
+
+    ************************ JsonToDictionary ************************
+
+-->
+        <Node Name="JsonToDictionary" Bounds="265,281,117,80" Id="GHNcyoCtgbEOuGFgrlTa27">
+          <p:NodeReference>
+            <Choice Kind="OperationDefinition" Name="Operation" />
+            <FullNameCategoryReference ID="Primitive" />
+          </p:NodeReference>
+          <p:HideCategory p:Type="Boolean">false</p:HideCategory>
+          <Patch Id="SyF6Y0VUhKtMF6twYwIC3x">
+            <Node Bounds="277,310,93,26" AutoConnect="true" Id="Gyd8dtMMbHtLI2ndZbtSLD">
+              <p:NodeReference LastCategoryFullName="StringExtensionLibrary.StringExtensions" LastSymbolSource="StringExtensionLibrary.dll">
+                <Choice Kind="OperationNode" Name="JsonToDictionary" />
+                <FullNameCategoryReference ID="StringExtensionLibrary.StringExtensions" />
+              </p:NodeReference>
+              <Pin Id="QZYFQ9erWjKQacc5spOCT0" Name="Input" Kind="StateInputPin" />
+              <Pin Id="BYNZpttUP81N41Dppci8gV" Name="Result" Kind="OutputPin" />
+            </Node>
+            <Pin Id="TcVdDT1Jo83L87WV0iL8WZ" Name="Input" Kind="InputPin" />
+            <Pin Id="Ei9qAORrIApMtE3z2XznBF" Name="Result" Kind="OutputPin" />
+          </Patch>
+        </Node>
+        <!--
+
+    ************************ JsonToExpanderObject ************************
+
+-->
+        <Node Name="JsonToExpanderObject" Bounds="545,281,143,80" Id="GnPmYZ5eE4lOSKRdmwsqZD">
+          <p:NodeReference>
+            <Choice Kind="OperationDefinition" Name="Operation" />
+            <FullNameCategoryReference ID="Primitive" />
+          </p:NodeReference>
+          <p:HideCategory p:Type="Boolean">false</p:HideCategory>
+          <Patch Id="OPOYdldS7jINESczxn6VbV">
+            <Node Bounds="557,310,119,26" AutoConnect="true" Id="F6u9ILDoSQVP8BQHUdj7wU">
+              <p:NodeReference LastCategoryFullName="StringExtensionLibrary.StringExtensions" LastSymbolSource="StringExtensionLibrary.dll">
+                <Choice Kind="OperationNode" Name="JsonToExpanderObject" />
+                <FullNameCategoryReference ID="StringExtensionLibrary.StringExtensions" />
+              </p:NodeReference>
+              <Pin Id="FrmxbSpNOgrNyLnvXyYKPJ" Name="Input" Kind="StateInputPin" />
+              <Pin Id="Fxjc4c5aw25PNaQ7Qldjjt" Name="Result" Kind="OutputPin" />
+            </Node>
+            <Pin Id="BPEPnML2uT5My5Hwy6hbpz" Name="Input" Kind="InputPin" />
+            <Pin Id="GSzb9ynaiK2OR5SVCsBOtf" Name="Result" Kind="OutputPin" />
+          </Patch>
+        </Node>
+        <!--
+
+    ************************ JsonToObject ************************
+
+-->
+        <Node Name="JsonToObject" Bounds="60,263,112,80" Id="JhwJBzMJMmLK9wiWTkqk9u">
+          <p:NodeReference>
+            <Choice Kind="OperationDefinition" Name="Operation" />
+            <FullNameCategoryReference ID="Primitive" />
+          </p:NodeReference>
+          <p:HideCategory p:Type="Boolean">false</p:HideCategory>
+          <Patch Id="AixJ7jv1P9hN0Igb1lOzWV" IsGeneric="true">
+            <Node Bounds="72,292,77,26" AutoConnect="true" Id="OgSrtQzDzntPJtrwUscZKT">
+              <p:NodeReference LastCategoryFullName="StringExtensionLibrary.StringExtensions" LastSymbolSource="StringExtensionLibrary.dll">
+                <Choice Kind="OperationNode" Name="JsonToObject" />
+                <FullNameCategoryReference ID="StringExtensionLibrary.StringExtensions" />
+              </p:NodeReference>
+              <Pin Id="UJRhAMjwuxHORKvtlR5By6" Name="Input" Kind="StateInputPin" />
+              <Pin Id="RElErfddr9INyb88ENnCaH" Name="Result" Kind="OutputPin" />
+            </Node>
+            <Pin Id="QrvDChhXmnCOnNTliJJmSM" Name="Input" Kind="InputPin" />
+            <Pin Id="GD2THbqn3Q9NJWbKnPpG2I" Name="Result" Kind="OutputPin" />
+          </Patch>
+        </Node>
+      </Canvas>
+    </Canvas>
+    <!--
+
+    ************************ Application ************************
+
+-->
+    <Node Name="Application" Bounds="100,100" Id="F3kGxsY1dd5NtLmDYEGiv7">
+      <p:NodeReference>
+        <Choice Kind="ContainerDefinition" Name="Process" />
+        <FullNameCategoryReference ID="Primitive" />
+      </p:NodeReference>
+      <Patch Id="JegRJShPmv9N99kmAunTFh">
+        <Canvas Id="K0llRcNQNKVNMMyGrb1CBS" BordersChecked="false" CanvasType="Group" />
+        <Patch Id="JyFx2dxTUIwOwHK4BQ3cO2" Name="Create" />
+        <Patch Id="SPurEaHx2mZPpFmcgY2lAp" Name="Update" />
+        <!--
+
+    ************************  ************************
+
+-->
+        <ProcessDefinition Id="NEGTW9TUN2SND3GrnafmqK">
+          <Fragment Id="HBcPUCykar5NxOWbpjTr77" Patch="JyFx2dxTUIwOwHK4BQ3cO2" Enabled="true" />
+          <Fragment Id="Fxz0E9wES4uMCe7c3xsfmr" Patch="SPurEaHx2mZPpFmcgY2lAp" Enabled="true" />
+        </ProcessDefinition>
+      </Patch>
+    </Node>
+  </Patch>
+  <NugetDependency Id="JUdRwJoiFWON7z5zfNZULC" Location="String.Extensions" Version="1.0.4" />
+</Document>

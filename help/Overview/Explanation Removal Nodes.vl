@@ -1,0 +1,131 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document xmlns:p="property" Id="VZnT7q6rsBMMm0YtJmEd2F" LanguageVersion="2020.3.0.53" Version="0.128">
+  <NugetDependency Id="TtktHF7BmFrNnQFH8nFMYS" Location="VL.CoreLib" Version="2020.3.0-0053-gd338f20e7b" />
+  <Patch Id="V8VNT9QDeiRNhBKJM5zr88">
+    <Canvas Id="LxYRslweZIIMcmJpJ0rGpF" DefaultCategory="Main" BordersChecked="false" CanvasType="FullCategory" />
+    <!--
+
+    ************************ Application ************************
+
+-->
+    <Node Name="Application" Bounds="100,100" Id="KBTVl8sp7O8OgbMOLRpwyI">
+      <p:NodeReference>
+        <Choice Kind="ContainerDefinition" Name="Process" />
+        <FullNameCategoryReference ID="Primitive" />
+      </p:NodeReference>
+      <Patch Id="J7OHe46t0iBL4KupvbCXUZ">
+        <Canvas Id="EDAPO02faxhMcknIvfUugb" CanvasType="Group">
+          <Node Bounds="71,420,78,26" Id="IZgHOoBPACvPsUtDDNdPjk">
+            <p:NodeReference LastCategoryFullName="Primitive.String.Removal" LastSymbolSource="VL.StringExtensions.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <CategoryReference Kind="Category" Name="Removal" />
+              <Choice Kind="OperationCallFlag" Name="RemoveChars" />
+            </p:NodeReference>
+            <Pin Id="OVkNJ2lNjTzO6GsEYRkfPk" Name="Input" Kind="InputPin" />
+            <Pin Id="PbpSwFOdmeZODWLS18HVNR" Name="Chars" Kind="InputPin" />
+            <Pin Id="UiDpv2AgIflM0XXJgV9SeP" Name="Output" Kind="OutputPin" />
+          </Node>
+          <Node Bounds="297,420,78,26" Id="ViOPUWTW7Q6LHsQ3Tg8xJr">
+            <p:NodeReference LastCategoryFullName="Primitive.String.Removal" LastSymbolSource="VL.StringExtensions.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <CategoryReference Kind="Category" Name="Removal" />
+              <Choice Kind="OperationCallFlag" Name="RemovePrefix" />
+            </p:NodeReference>
+            <Pin Id="GeWf7neM7OYLMaqqKWOfxS" Name="Input" Kind="InputPin" />
+            <Pin Id="HWLeCahTVZ0LJOsPwYhVeQ" Name="Prefix" Kind="InputPin" />
+            <Pin Id="NkYeytLtOglM00S2KCz4KS" Name="Ignore Case" Kind="InputPin" />
+            <Pin Id="IeoCZufkTfvL3OE5RTGZra" Name="Output" Kind="OutputPin" />
+          </Node>
+          <Node Bounds="508,420,78,26" Id="DQn0p5Nn5TPOzSGbCPQ7Uz">
+            <p:NodeReference LastCategoryFullName="Primitive.String.Removal" LastSymbolSource="VL.StringExtensions.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <CategoryReference Kind="Category" Name="Removal" />
+              <Choice Kind="OperationCallFlag" Name="RemoveSuffix" />
+            </p:NodeReference>
+            <Pin Id="ElEI2LYtQDTLn6tR6ueB8c" Name="Input" Kind="InputPin" />
+            <Pin Id="OW8GmzUosvSO6bjXqiTDHa" Name="Suffix" Kind="InputPin" />
+            <Pin Id="KQXMBJiPG7eLt8suVEU52G" Name="Ignore Case" Kind="InputPin" />
+            <Pin Id="UV0ZIq22LVdLGN5DTOa91H" Name="Output" Kind="OutputPin" />
+          </Node>
+          <Node Bounds="702,420,56,26" Id="L5ZEyhZbERDP76YGyr8ZvD">
+            <p:NodeReference LastCategoryFullName="Primitive.String.Removal" LastSymbolSource="VL.StringExtensions.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <CategoryReference Kind="Category" Name="Removal" />
+              <Choice Kind="OperationCallFlag" Name="Truncate" />
+            </p:NodeReference>
+            <Pin Id="Vx8jz4mg7PeQIVw9YCVWvr" Name="Input" Kind="InputPin" />
+            <Pin Id="DjXy5WvEcriPa3n095sS56" Name="Max Length" Kind="InputPin" DefaultValue="5">
+              <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+                <Choice Kind="TypeFlag" Name="Integer32" />
+              </p:TypeAnnotation>
+            </Pin>
+            <Pin Id="UroWJKGEnrHMMPwezpr7u8" Name="Output" Kind="OutputPin" />
+          </Node>
+          <Pad Id="NsOwQIkIkbuMhOBNwuldwS" Comment="Chars" Bounds="146,325,35,65" ShowValueBox="true" isIOBox="true" Value="a, i, u">
+            <p:TypeAnnotation LastCategoryFullName="Collections" LastSymbolSource="VL.Collections.vl">
+              <Choice Kind="TypeFlag" Name="Spread" />
+              <p:TypeArguments>
+                <TypeReference LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+                  <Choice Kind="TypeFlag" Name="Char" />
+                </TypeReference>
+              </p:TypeArguments>
+            </p:TypeAnnotation>
+          </Pad>
+          <Pad Id="U3YjqmPyj6TPjALXyrxS4D" Comment="" Bounds="72,283,138,15" ShowValueBox="true" isIOBox="true" Value="gamma is fun">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Pad Id="GdcnWi45cy9NVAPm9DeqEx" Comment="" Bounds="73,484,72,15" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="IQHbfL7OwmvONYnGzjSNag" Comment="" Bounds="299,283,136,15" ShowValueBox="true" isIOBox="true" Value="_somePrefix.Hello!">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Pad Id="Rnnfg2jx89rPLT7ABn5YyU" Comment="Prefix" Bounds="336,325,83,15" ShowValueBox="true" isIOBox="true" Value="_somePrefix.">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Pad Id="EAXe8e6SdzkOljYHkGh8i7" Comment="" Bounds="299,484,64,15" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="K7eg7YLeXzLLedFWRxE643" Comment="" Bounds="510,283,122,15" ShowValueBox="true" isIOBox="true" Value="Bonsoir_LeSuffixe">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Pad Id="CO6PW9gVCbALzyANTODciQ" Comment="Suffix" Bounds="546,325,88,15" ShowValueBox="true" isIOBox="true" Value="_LeSuffixe">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Pad Id="Sp7G7z2PnmqNg8GFe9bDrM" Comment="" Bounds="510,484,73,15" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="SicCDvXdUrtLB0xHuOfM7t" Comment="" Bounds="704,289,145,15" ShowValueBox="true" isIOBox="true" Value="Long string I want to truncate">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Pad Id="SVzjNAhFBz6M6YrHSR26DZ" Comment="" Bounds="704,484,122,15" ShowValueBox="true" isIOBox="true" />
+        </Canvas>
+        <Patch Id="BDNHSCVD5WbOUW4wE5pB4D" Name="Create" />
+        <Patch Id="B5XvZDoh2v5PVqZ6KlDs6a" Name="Update" />
+        <ProcessDefinition Id="F9f6xo1l2MlLaWMwWDQAWS">
+          <Fragment Id="UvLcmCSYhApL8KTq3GPH4O" Patch="BDNHSCVD5WbOUW4wE5pB4D" Enabled="true" />
+          <Fragment Id="S2MArxSqQbNPIzbE8TZUwo" Patch="B5XvZDoh2v5PVqZ6KlDs6a" Enabled="true" />
+        </ProcessDefinition>
+        <Link Id="F3hhvvkWC22LYYGnnWETcg" Ids="NsOwQIkIkbuMhOBNwuldwS,PbpSwFOdmeZODWLS18HVNR" />
+        <Link Id="JsIh19KEECeNN8ozbOOewb" Ids="U3YjqmPyj6TPjALXyrxS4D,OVkNJ2lNjTzO6GsEYRkfPk" />
+        <Link Id="Kb0Ah8ppGNJNRRTW1mKZPt" Ids="UiDpv2AgIflM0XXJgV9SeP,GdcnWi45cy9NVAPm9DeqEx" />
+        <Link Id="POqxDYEYAzvQANSfn9n1WL" Ids="IQHbfL7OwmvONYnGzjSNag,GeWf7neM7OYLMaqqKWOfxS" />
+        <Link Id="BX1uqWEKMrBMiTyhpI5qxT" Ids="Rnnfg2jx89rPLT7ABn5YyU,HWLeCahTVZ0LJOsPwYhVeQ" />
+        <Link Id="A4YdWfjIYHqLSPwhrPjYM0" Ids="IeoCZufkTfvL3OE5RTGZra,EAXe8e6SdzkOljYHkGh8i7" />
+        <Link Id="RikdWcepW5PPFaKVBhcsuZ" Ids="K7eg7YLeXzLLedFWRxE643,ElEI2LYtQDTLn6tR6ueB8c" />
+        <Link Id="NpEOpGM7vlpMOXwQmO2LyJ" Ids="CO6PW9gVCbALzyANTODciQ,OW8GmzUosvSO6bjXqiTDHa" />
+        <Link Id="UmBSsbfcCnaOYjjT2tJUhX" Ids="UV0ZIq22LVdLGN5DTOa91H,Sp7G7z2PnmqNg8GFe9bDrM" />
+        <Link Id="J01An17IwQWOiMkuUMrAhW" Ids="SicCDvXdUrtLB0xHuOfM7t,Vx8jz4mg7PeQIVw9YCVWvr" />
+        <Link Id="NHyMdDCtoAILEXIreNyq6s" Ids="UroWJKGEnrHMMPwezpr7u8,SVzjNAhFBz6M6YrHSR26DZ" />
+      </Patch>
+    </Node>
+  </Patch>
+  <NugetDependency Id="EkUOS966VytNIhgaLmqxrl" Location="VL.Stride" Version="0.8.23-g0ebf2d6cbb" />
+  <NugetDependency Id="OCPnu8AQk0kPs2V5w8h9Kc" Location="VL.StringExtensions" Version="0.0.0.0" />
+</Document>
