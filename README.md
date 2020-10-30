@@ -1,6 +1,6 @@
 # VL.StringExtensions
 
-![Nuget](https://img.shields.io/nuget/v/VL.StringExtensions?style=flat-square)
+[![Nuget](https://img.shields.io/nuget/v/VL.StringExtensions?style=flat-square)](https://www.nuget.org/packages/VL.StringExtensions)
 
 _This plugin is a VL wrapper for [Jeff Klein's String.Extensions](https://github.com/Jeff-Klein/String.Extensions) and [monk8800's StringExtensions](https://github.com/monk8800/StringExtensions) .NET libraries. The plugin exposes some of their methods as VL nodes._
 
