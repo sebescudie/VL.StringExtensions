@@ -6,7 +6,12 @@ _This plugin is a VL wrapper for [Jeff Klein's String.Extensions](https://github
 
 ## Usage
 
-- In VL's Quad Menu, go to Dependencies/Manage Nugets/Commandline and type `nuget install VL.StringExtensions`. The nodes will be available in the nodebrowser under in the String category.
+- In VL's Quad Menu, go to Dependencies/Manage Nugets/Commandline and type 
+
+``` 
+nuget install VL.StringExtensions
+```
+The nodes will be available in the nodebrowser under in the String category.
 
 ## What's inside
 
