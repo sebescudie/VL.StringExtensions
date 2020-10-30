@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
+  <metadata>
+    <id>VL.StringExtensions</id>
+    <version>2.0.0</version>
+    <authors>Jeff Klein, monk8800, sebescudie</authors>
+    <owners>sebescudie</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <licenseUrl>http://www.gnu.org/licenses/</licenseUrl>
+    <projectUrl>https://github.com/sebescudie/VL.StringExtensions</projectUrl>
+    <icon>icon.png</icon>
+    <description>Provides some useful string manipulation nodes by wrapping Jeff Klein's and monk8800's StringExntensions libraries in VL</description>
+    <summary>Provides some useful string manipulation nodes by wrapping Jeff Klein's and monk8800's StringExntensions libraries in VL</summary>
+    <releaseNotes>New plugin structure and help patches</releaseNotes>
+    <language>en-US</language>
+    <tags>vl string manipulation parsing regex</tags>
+    <dependencies>
+      <dependency id="String.Extensions" version="1.0.4" />
+      <dependency id="StringExtensionsLibrary" version="1.0.0" />
+    </dependencies>
+  </metadata>
+</package>
