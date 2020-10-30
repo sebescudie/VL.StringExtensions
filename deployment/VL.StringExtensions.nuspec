@@ -22,5 +22,6 @@
     <files>
     <file src="..\*.vl"/>
     <file src="..\**\*.vl"/>
+    <file src="..\deployment\icon.png" target=""/>
   </files>
 </package>
