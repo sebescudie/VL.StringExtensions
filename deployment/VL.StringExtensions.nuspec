@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
   <metadata>
     <id>VL.StringExtensions</id>
-    <version>2.0.0</version>
+    <version>2.0.1</version>
     <authors>Jeff Klein, monk8800, sebescudie</authors>
     <owners>sebescudie</owners>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
@@ -19,4 +19,8 @@
       <dependency id="StringExtensionsLibrary" version="1.0.0" />
     </dependencies>
   </metadata>
+    <files>
+    <file src="..\*.vl"/>
+    <file src="..\**\*.vl"/>
+  </files>
 </package>
